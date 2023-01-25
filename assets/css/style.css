@@ -44,6 +44,30 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 :root {
 	--body-width: 30rem;
 	--body-padding: 1.2rem;
+	--text-color: #342C2A;
+	--bg-color-light: #fff;
+	--bg-color: #262D49;
+	--bg-color-0a: #262D4905;
+	--bg-color-1a: #262D491a;
+	--bg-color-2a: #262D492a;
+	--bg-color-3a: #262D493a;
+	--bg-color-4a: #262D494a;
+	--bg-color-5a: #262D495a;
+	--bg-color-6a: #262D496a;
+	--bg-color-7a: #262D497a;
+	--bg-color-8a: #262D498a;
+	--bg-color-9a: #262D499a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap))
+}
+
+
+
+/* :root {
+	--body-width: 30rem;
+	--body-padding: 1.2rem;
 	--text-color: #C25E23;
 	--bg-color-light: #fff;
 	--bg-color: #EAC189;
@@ -61,7 +85,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
-}
+} */
 
 /* Green Colors */
 
@@ -196,4 +220,60 @@ h6,
 	margin-bottom: .51rem;
 	overflow: hidden;
 	margin: 0 1rem;
+}
+
+.sideHolderWrapper {
+	position: absolute;
+	width: 4.193rem;
+	height: 18rem;
+	border-radius: 1.6rem;
+	background: transparent;
+	z-index: 1000;
+	bottom: 1rem;
+	right: var(--body-padding);
+	/* box-shadow: 12px 12px 32px var(--text-color)1a;
+	background: var(--text-color)0a; */
+}
+
+
+.sideHolder {
+	position: relative;
+	width: 4.193rem;
+	height: 4.193rem;
+	border-radius: 1.6rem;
+	z-index: 1000;
+	margin-bottom: .51rem;
+	overflow: hidden;
+
+}
+
+.sideHolderWrapper .active {
+	width: 4.393rem;
+	height: 4.393rem;
+	border: .2rem solid var(--text-color);
+}
+
+.sideHolderCount {
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #011605cc;
+	/* background: radial-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 80%)); */
+}
+
+.sideHolderOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 100, 0, 0.0382);
+	/* background: radial-gradient(rgb(71 68 68 / 20%), rgb(57 54 54 / 50%)); */
 }
