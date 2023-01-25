@@ -19,7 +19,7 @@ PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
 
-:root {
+/* :root {
 	--body-width: 30rem;
 	--body-padding: 1.2rem;
 	--text-color: #E74F4E;
@@ -39,7 +39,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
-}
+} */
 
 :root {
 	--body-width: 30rem;
