@@ -1,0 +1,199 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+	--gray-50: #FFAE79;
+    --gray-600: hsl(218, 17%, 35%);
+    --gray-700: #FFAE793a;
+    --gray-800: #FFAE795a;
+    --gray-900: hsl(230, 21%, 11%);
+    --gap: 1.5rem;
+    --duration: 30s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+:root {
+	--body-width: 30rem;
+	--body-padding: 1.2rem;
+	--text-color: #E74F4E;
+	--bg-color-light: #fff;
+	--bg-color: #FFAE79;
+	--bg-color-0a: #FFAE7905;
+	--bg-color-1a: #FFAE791a;
+	--bg-color-2a: #FFAE792a;
+	--bg-color-3a: #FFAE793a;
+	--bg-color-4a: #FFAE794a;
+	--bg-color-5a: #FFAE795a;
+	--bg-color-6a: #FFAE796a;
+	--bg-color-7a: #FFAE797a;
+	--bg-color-8a: #FFAE798a;
+	--bg-color-9a: #FFAE799a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap))
+}
+
+:root {
+	--body-width: 30rem;
+	--body-padding: 1.2rem;
+	--text-color: #C25E23;
+	--bg-color-light: #fff;
+	--bg-color: #EAC189;
+	--bg-color-0a: #EAC18905;
+	--bg-color-1a: #EAC1891a;
+	--bg-color-2a: #EAC1892a;
+	--bg-color-3a: #EAC1893a;
+	--bg-color-4a: #EAC1894a;
+	--bg-color-5a: #EAC1895a;
+	--bg-color-6a: #EAC1896a;
+	--bg-color-7a: #EAC1897a;
+	--bg-color-8a: #EAC1898a;
+	--bg-color-9a: #EAC1899a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap))
+}
+
+/* Green Colors */
+
+/* :root {
+	--body-width: 30rem;
+	--body-padding: 1.2rem;
+	--text-color: #11471c;
+	--bg-color-light: #fff;
+	--bg-color: #006400;
+	--bg-color-0a: #00640005;
+	--bg-color-1a: #0064001a;
+	--bg-color-2a: #0064002a;
+	--bg-color-3a: #0064003a;
+	--bg-color-4a: #0064004a;
+	--bg-color-5a: #0064005a;
+	--bg-color-6a: #0064006a;
+	--bg-color-7a: #0064007a;
+	--bg-color-8a: #0064008a;
+	--bg-color-9a: #0064009a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap))
+} */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	color: var(--text-color);
+}
+
+@font-face {
+	font-family: Barlow;
+	src: url(Barlow-Regular_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowSemiBold;
+	src: url(Barlow-SemiBold_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowBlack;
+	src: url(Barlow-Black_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowBold;
+	src: url(Barlow-Bold_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowMedium;
+	src: url(Barlow-Medium_2);
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: madani;
+	src: url('./Madani-Arabic-Font-Family/Madani\ Arabic\ Regular.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: madaniLight;
+	src: url('./Madani-Arabic-Font-Family/Madani\ Arabic\ Light.ttf');
+	font-display: swap;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--text-color);
+	opacity: 1;
+	/* Firefox */
+}
+
+.app-content {
+	background: var(--bg-color-0a) !important;
+}
+
+#imageBox:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%)
+}
+
+.hiddenCanvas {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: -11111111;
+}
+
+.lastSeenHolderWrapper {
+	position: relative;
+	width: 100%;
+	height: 4.193rem;
+	border-radius: 1.6rem;
+	background: transparent;
+	z-index: 1000;
+	display: flex;
+	flex-direction: row;
+	overflow: auto;
+}
+
+
+.lastSeenHolder {
+	position: relative;
+	width: 4.193rem;
+	height: 4.193rem;
+	border-radius: 1.6rem;
+	z-index: 1000;
+	margin-bottom: .51rem;
+	overflow: hidden;
+	margin: 0 1rem;
+}

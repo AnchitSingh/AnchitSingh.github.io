@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Create stunning custom designs with our easy-to-use online editor. With a wide range of customization options and an intuitive interface, our easy-to-use online tool is perfect for businesses, event planners, and individual consumers looking to create personalized products. Whether you need custom invitations, promotional materials, or social media graphics, our editor has everything you need. Try it out today and see the difference it can make for your design projects.">
+<meta name="keywords" content="Custom design, Online editor, Design tool, Customization, Personalization, Graphic design, Digital products, Custom invitations, Custom logos, Promotional materials">
+<meta name="author" content="Classified">
+ <title>Classified Tools</title>
+    <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/authentication.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+    <!-- <link rel="stylesheet" href="loginMobile.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="fluidtab.css">
+    <link rel="stylesheet" href="mason.css">
+
+    <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <style>
+        
+
+        #imageBox:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0 100 0 / 2%);
+            /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%) */
+        }
+
+        .hiddenCanvas {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            z-index: -11111111;
+        }
+
+        .sideHolderWrapper {
+            position: absolute;
+            width: 4.193rem;
+            height: 18rem;
+            border-radius: 1.6rem;
+            background: transparent;
+            z-index: 1000;
+            bottom: 1rem;
+            right: var(--body-padding);
+            /* box-shadow: 12px 12px 32px var(--text-color)1a;
+            background: var(--text-color)0a; */
+        }
+
+
+        .sideHolder {
+            position: relative;
+            width: 4.193rem;
+            height: 4.193rem;
+            border-radius: 1.6rem;
+            z-index: 1000;
+            margin-bottom: .51rem;
+            overflow: hidden;
+            
+        }
+
+        .sideHolderWrapper .active {
+            width: 4.393rem;
+            height: 4.393rem;
+            border: .2rem solid var(--text-color);
+        }
+        .sideHolderCount {
+            display: flex;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #011605cc;
+            /* background: radial-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 80%)); */
+        }
+
+        .sideHolderOverlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 100, 0, 0.0382);
+            /* background: radial-gradient(rgb(71 68 68 / 20%), rgb(57 54 54 / 50%)); */
+        }
+    </style>
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body style="font-family: SanF !important;" class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+    <!-- BEGIN: Content-->
+    <div class="app-content content " style="max-width: var(--body-width);background: #fff;">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <!-- topbar start -->
+            <div style="position: absolute;z-index: 99999;width: 100%;display: flex;justify-content: space-between;background: transparent;">
+                <a href="./index.html" style="padding: var(--body-padding) 0 0 var(--body-padding);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11 7.99996L7 12M7 12L11 16M7 12H17M10 22H14C16.8003 22 18.2004 22 19.27 21.455C20.2108 20.9757 20.9757 20.2108 21.455 19.27C22 18.2004 22 16.8003 22 14V10C22 7.19974 22 5.79961 21.455 4.73005C20.9757 3.78924 20.2108 3.02433 19.27 2.54497C18.2004 2 16.8003 2 14 2H10C7.19974 2 5.79961 2 4.73005 2.54497C3.78924 3.02433 3.02433 3.78924 2.54497 4.73005C2 5.79961 2 7.19974 2 10V14C2 16.8003 2 18.2004 2.54497 19.27C3.02433 20.2108 3.78924 20.9757 4.73005 21.455C5.79961 22 7.19974 22 10 22Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+                <a href="./card-cart.html" style="padding: var(--body-padding) var(--body-padding) 0  0;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9999 9H7.99991M7.99991 6.08268V6C7.99991 3.79086 9.79077 2 11.9999 2C14.2091 2 15.9999 3.79086 15.9999 6V6.08268M7.99991 6.08268C8.78662 6 9.78914 6 11.1878 6H12.812C14.2107 6 15.2132 6 15.9999 6.08268M7.99991 6.08268C7.39786 6.14596 6.92219 6.25766 6.49207 6.45483C5.61778 6.85563 4.87763 7.50008 4.36037 8.31092C3.77337 9.23109 3.60354 10.4539 3.26388 12.8995C2.8277 16.0399 2.60962 17.6101 3.08915 18.8297C3.51012 19.9003 4.28741 20.793 5.28995 21.3573C6.43192 22 8.01722 22 11.1878 22H12.812C15.9826 22 17.5679 22 18.7099 21.3573C19.7124 20.793 20.4897 19.9003 20.9107 18.8297C21.3902 17.6101 21.1721 16.0399 20.7359 12.8995C20.3963 10.4539 20.2265 9.23109 19.6395 8.31092C19.1222 7.50008 18.382 6.85563 17.5078 6.45483C17.0776 6.25766 16.602 6.14596 15.9999 6.08268" stroke="var(--text-color)" stroke-width="1.3" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+            </div>
+            <!-- topbar end -->
+            <div class="content-body">
+                <div class="auth-inner row m-0" style="width: 100%;position: relative;">
+                    <div style="width: 100%;height: 100%;background: #fff;padding: 0;overflow: hidden;position: relative;">
+                        <div id="imageBox" data-src="a1.webp"  style="height: 70vh;padding: 0rem;border-radius: 0 0 2rem 2rem;box-shadow: 3px 4px 33px rgb(233, 232, 220);">
+                            <canvas id="imageBox-canvas" class="hiddenCanvas"></canvas>
+                            <img id="imageBox-image" alt="">
+                            <div class="sideHolderWrapper">
+                                <div id="sizeImageHolder1" data-src="./etsy/2.png" class="sideHolder">
+                                    <canvas class="hiddenCanvas" id="sizeImageHolder1-canvas"></canvas>
+                                    <img id="sizeImageHolder1-image" alt=""></img>
+                                    <div class="sideHolderOverlay"></div>
+                                </div>
+                                <div id="sizeImageHolder2" data-src="./Yellow Illustration Hamster Circle Sticker.png" class="sideHolder">
+                                    <canvas class="hiddenCanvas" id="sizeImageHolder2-canvas"></canvas>
+                                    <img id="sizeImageHolder2-image" alt=""></img>
+                                    <div class="sideHolderOverlay"></div>
+                                </div>
+                                <div id="sizeImageHolder3" data-src="./Pink Lazy Dog illustration Pet Care Logo (1).png" class="sideHolder active">
+                                    <canvas class="hiddenCanvas" id="sizeImageHolder3-canvas"></canvas>
+                                    <img id="sizeImageHolder3-image" alt=""></img>
+                                    <div class="sideHolderOverlay"></div>
+                                </div>
+                                <div id="sizeImageHolder4" data-src="./Pink Lazy Dog illustration Pet Care Logo.png" class="sideHolder">
+                                    <canvas class="hiddenCanvas" id="sizeImageHolder4-canvas"></canvas>
+                                    <img id="sizeImageHolder4-image" alt=""></img>
+                                    <div class="sideHolderCount">
+                                        <span style="margin: auto;position: relative;">+3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%;height: 40vh;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="./app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="./app-assets/js/core/app-menu.js"></script>
+    <script src="./app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
+    <!-- END: Page JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="svg.min.js"></script>
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', e => {
+                button.classList.toggle('added');
+            });
+        });
+    </script>
+    <script>
+        var nav = $('.fluidnav');
+        var line = $('<div />').addClass('line');
+
+        line.appendTo(nav);
+
+        var active = nav.find('.active');
+        var pos = 0;
+        var wid = 0;
+
+        if (active.length) {
+            pos = active.position().left;
+            wid = active.width();
+            line.css({
+                left: pos,
+                width: wid
+            });
+        }
+
+        nav.find('ul li a').click(function(e) {
+            e.preventDefault();
+            if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+
+                nav.addClass('animate');
+
+                var _this = $(this);
+
+                nav.find('ul li').removeClass('active');
+
+                var position = _this.parent().position();
+                var width = _this.parent().width();
+
+                if (position.left >= pos) {
+                    line.animate({
+                        width: ((position.left - pos) + width)
+                    }, 300, function() {
+                        line.animate({
+                            width: width,
+                            left: position.left
+                        }, 150, function() {
+                            nav.removeClass('animate');
+                        });
+                        _this.parent().addClass('active');
+                    });
+                } else {
+                    line.animate({
+                        left: position.left,
+                        width: ((pos - position.left) + wid)
+                    }, 300, function() {
+                        line.animate({
+                            width: width
+                        }, 150, function() {
+                            nav.removeClass('animate');
+                        });
+                        _this.parent().addClass('active');
+                    });
+                }
+
+                pos = position.left;
+                wid = width;
+            }
+        });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smartcrop/0.0.0/smartcrop.min.js" integrity="sha512-t7ESuOtHDE+p9flVWop8VMdzO6p0+bQzMA0dZ+hu3JZWrSzURM2Rskzf5mX73Ke5CB64GyAIxWgD8dELaDax5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./smartcrop.js"></script>
+    <script src="./smartCropImage.js"></script>
+    <script>
+        smartCropping('imageBox')
+        smartCropping('sizeImageHolder1')
+        smartCropping('sizeImageHolder2')
+        smartCropping('sizeImageHolder3')
+        smartCropping('sizeImageHolder4')
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

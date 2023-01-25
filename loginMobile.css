@@ -1,0 +1,173 @@
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: #b4b7bd;
+}
+
+
+:root {
+    --mobile-primary: #FFBF56;
+    --mobile-shadow: #ffca744a;
+    --mobile-button: #FBAB29;
+    --mobile-button-color: #f77f00;
+}
+
+.upper-container {
+    width: 100%;
+    position: absolute;
+    height: 25%;
+    background: var(--mobile-primary);
+    border-radius: 0 0 75px 75px;
+    text-align: center;
+    max-width: inherit;
+}
+
+.upper-container .top-header {
+    position: relative;
+    top: 36.32%;
+    font-size: 35px;
+    color: #fff;
+    font-family: BarlowSemiBold;
+}
+
+.lower-container {
+    position: absolute;
+    width: 100%;
+    height: 81.2%;
+    top: 18.8%;
+    max-width: inherit;
+}
+
+.outer-holder {
+    width: 89.7%;
+    height: 100%;
+    background: #FFF;
+    border-radius: 75px;
+    margin: 0 auto;
+}
+
+.inner-holder {
+    width: 100%;
+    position: relative;
+    top: 15.5%;
+    height: 84.5%;
+}
+
+.form-container {
+    height: 11.9%;
+    width: 92.4%;
+    background: #fff;
+    border-radius: 2.45rem;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 9px 60px 0 var(--mobile-shadow);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-input {
+    font-family: Barlow;
+    color: #b4b7bd;
+    background: transparent;
+    width: 85%;
+    height: 100%;
+    border-radius: 0 2.45rem 2.45rem 0;
+    border: none;
+    outline: none;
+    padding-left: 1.5rem;
+    font-size: 1.32rem;
+}
+
+.form-svg {
+    width: 15%;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.form-button-container {
+    height: 11.9%;
+    width: 92.4%;
+    background: var(--mobile-button);
+    border-radius: 2.45rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.form-button {
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.45rem;
+    border: none;
+    outline: none;
+    font-size: 1.32rem;
+    box-shadow: 0 9px 60px 0 var(--mobile-shadow);
+    text-align: center;
+    font-family: BarlowMedium;
+}
+
+.form-button-container .waves-float:active {
+    box-shadow: 0 4px 4px 0 var(--mobile-shadow);
+
+}
+
+.alternate-msg {
+    text-align: center;
+    width: 92.4%;
+    background: transparent;
+    border-radius: 2.45rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.social-container {
+    text-align: center;
+    width: 92.4%;
+    background: #fff;
+    border-radius: 2.45rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 9px 60px 0 var(--mobile-shadow);
+    border-radius: 1rem;
+    margin: 1rem;
+    transition: .3s;
+}
+
+.social-buttons:hover {
+    transform: scale(1.2);
+}
+
+.alternate-btn-container {
+    height: 8%;
+    width: 45.4%;
+    background: transparent;
+    border-radius: 2.45rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.alternate-btn {
+    color: var(--mobile-button-color);
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.45rem;
+    border: none;
+    outline: none;
+    font-size: 1.32rem;
+    box-shadow: 0 3px 3px 0 var(--mobile-shadow);
+    text-align: center;
+    font-family: 'Barlow';
+}

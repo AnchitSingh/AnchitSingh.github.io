@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Create stunning custom designs with our easy-to-use online editor. With a wide range of customization options and an intuitive interface, our easy-to-use online tool is perfect for businesses, event planners, and individual consumers looking to create personalized products. Whether you need custom invitations, promotional materials, or social media graphics, our editor has everything you need. Try it out today and see the difference it can make for your design projects.">
+<meta name="keywords" content="Custom design, Online editor, Design tool, Customization, Personalization, Graphic design, Digital products, Custom invitations, Custom logos, Promotional materials">
+<meta name="author" content="Classified">
+ <title>Classified Tools</title>
+    <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/authentication.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+    <!-- <link rel="stylesheet" href="loginMobile.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="fluidtab.css">
+    <link rel="stylesheet" href="mason.css">
+
+    <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <style>
+        
+
+        #imageBox:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%)
+        }
+
+        .hiddenCanvas {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            z-index: -11111111;
+        }
+
+        .lastSeenHolderWrapper {
+            position: relative;
+            width: 100%;
+            height: 4.193rem;
+            border-radius: 1.6rem;
+            background: transparent;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+        }
+
+
+        .lastSeenHolder {
+            position: relative;
+            width: 4.193rem;
+            height: 4.193rem;
+            border-radius: 1.6rem;
+            z-index: 1000;
+            margin-bottom: .51rem;
+            overflow: hidden;
+            margin: 0 1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="clearInput.css">
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body style="font-family: SanF !important;" class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+    <!-- BEGIN: Content-->
+    <div class="app-content content " style="max-width: var(--body-width);background: #fff;">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <!-- topbar start -->
+            <div style="position: absolute;z-index: 99999;width: 100%;display: flex;justify-content: space-between;background: transparent;">
+                <a href="./index.html" style="padding: var(--body-padding) 0 0 var(--body-padding);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11 7.99996L7 12M7 12L11 16M7 12H17M10 22H14C16.8003 22 18.2004 22 19.27 21.455C20.2108 20.9757 20.9757 20.2108 21.455 19.27C22 18.2004 22 16.8003 22 14V10C22 7.19974 22 5.79961 21.455 4.73005C20.9757 3.78924 20.2108 3.02433 19.27 2.54497C18.2004 2 16.8003 2 14 2H10C7.19974 2 5.79961 2 4.73005 2.54497C3.78924 3.02433 3.02433 3.78924 2.54497 4.73005C2 5.79961 2 7.19974 2 10V14C2 16.8003 2 18.2004 2.54497 19.27C3.02433 20.2108 3.78924 20.9757 4.73005 21.455C5.79961 22 7.19974 22 10 22Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+                <a href="./card-cart.html" style="padding: var(--body-padding) var(--body-padding) 0  0;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9999 9H7.99991M7.99991 6.08268V6C7.99991 3.79086 9.79077 2 11.9999 2C14.2091 2 15.9999 3.79086 15.9999 6V6.08268M7.99991 6.08268C8.78662 6 9.78914 6 11.1878 6H12.812C14.2107 6 15.2132 6 15.9999 6.08268M7.99991 6.08268C7.39786 6.14596 6.92219 6.25766 6.49207 6.45483C5.61778 6.85563 4.87763 7.50008 4.36037 8.31092C3.77337 9.23109 3.60354 10.4539 3.26388 12.8995C2.8277 16.0399 2.60962 17.6101 3.08915 18.8297C3.51012 19.9003 4.28741 20.793 5.28995 21.3573C6.43192 22 8.01722 22 11.1878 22H12.812C15.9826 22 17.5679 22 18.7099 21.3573C19.7124 20.793 20.4897 19.9003 20.9107 18.8297C21.3902 17.6101 21.1721 16.0399 20.7359 12.8995C20.3963 10.4539 20.2265 9.23109 19.6395 8.31092C19.1222 7.50008 18.382 6.85563 17.5078 6.45483C17.0776 6.25766 16.602 6.14596 15.9999 6.08268" stroke="var(--text-color)" stroke-width="1.3" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+            </div>
+            <!-- topbar end -->
+            <div class="content-body">
+                <div class="auth-inner row m-0" style="width: 100%;position: relative;padding: 6rem var(--body-padding) var(--body-padding) var(--body-padding);">
+                    <div style="padding: 0; display: flex;flex-direction: row;">
+                        <div class="input mb-3" style="width: 80%;">
+                            <div class="text" style="display: flex;flex-direction: row;">
+                                <svg style="margin: auto;margin-left:1rem" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5304 17.4698C19.2375 17.1769 18.7626 17.1769 18.4697 17.4698C18.1768 17.7626 18.1768 18.2375 18.4697 18.5304L19.5304 17.4698ZM22.4696 22.5304C22.7625 22.8233 23.2374 22.8233 23.5303 22.5304C23.8232 22.2375 23.8232 21.7626 23.5303 21.4697L22.4696 22.5304ZM9.33512 4.80232C9.74423 4.73752 10.0234 4.35334 9.95856 3.94423C9.89376 3.53511 9.50958 3.25599 9.10047 3.32079L9.33512 4.80232ZM4.32076 8.1005C4.25596 8.50961 4.53508 8.89379 4.9442 8.95859C5.35331 9.02339 5.73749 8.74426 5.80229 8.33515L4.32076 8.1005ZM18.4697 18.5304L22.4696 22.5304L23.5303 21.4697L19.5304 17.4698L18.4697 18.5304ZM11 18.25C6.44365 18.25 2.75 14.5563 2.75 10H1.25C1.25 15.3848 5.61522 19.75 11 19.75V18.25ZM19.25 10C19.25 14.5563 15.5563 18.25 11 18.25V19.75C16.3848 19.75 20.75 15.3848 20.75 10H19.25ZM11 1.75C15.5563 1.75 19.25 5.44365 19.25 10H20.75C20.75 4.61522 16.3848 0.25 11 0.25V1.75ZM11 0.25C5.61522 0.25 1.25 4.61522 1.25 10H2.75C2.75 5.44365 6.44365 1.75 11 1.75V0.25ZM9.10047 3.32079C6.64008 3.71047 4.71044 5.64012 4.32076 8.1005L5.80229 8.33515C6.09032 6.51661 7.51658 5.09035 9.33512 4.80232L9.10047 3.32079Z" fill="var(--text-color)" />
+                                </svg>
+
+                                <input type="text" placeholder="Search" />
+                            </div>
+                            <button class="clear">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="line" d="M2 2L22 22" />
+                                    <path class="long" d="M9 15L20 4" />
+                                    <path class="arrow" d="M13 11V7" />
+                                    <path class="arrow" d="M17 11H13" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="waves-light waves" style="height: 4rem;width: 4rem;background:#f1f4f3;margin: 0 0 0 1rem;border-radius: 1rem;text-align: center;justify-content: center;display: flex;">
+                            <svg style="margin: auto;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="var(--text-color)" d="M16.2703 11.7444L16.7465 12.3238L16.2703 11.7444ZM7.37862 11.7557L7.87738 11.1956L7.37862 11.7557ZM13.3675 19.3421L12.9347 18.7296L13.3675 19.3421ZM11.4262 20.7135L11.859 21.3261L11.4262 20.7135ZM4.12603 8.85954L3.62728 9.41967L4.12603 8.85954ZM19.7906 8.85091L19.3144 8.27151L19.7906 8.85091ZM16 7.75C16.4142 7.75 16.75 7.41421 16.75 7C16.75 6.58579 16.4142 6.25 16 6.25V7.75ZM8 6.25C7.58579 6.25 7.25 6.58578 7.25 7C7.25 7.41421 7.58579 7.75 8 7.75V6.25ZM6.47246 3.75H17.5842V2.25H6.47246V3.75ZM12.9347 18.7296L10.9935 20.101L11.859 21.3261L13.8002 19.9547L12.9347 18.7296ZM9.75 19.5134V15.336H8.25V19.5134H9.75ZM7.87738 11.1956L4.62479 8.29941L3.62728 9.41967L6.87987 12.3159L7.87738 11.1956ZM19.3144 8.27151L15.7941 11.165L16.7465 12.3238L20.2668 9.43032L19.3144 8.27151ZM13.75 15.4521V17.1817H15.25V15.4521H13.75ZM15.7941 11.165C14.5015 12.2274 13.75 13.7946 13.75 15.4521H15.25C15.25 14.2522 15.7936 13.107 16.7465 12.3238L15.7941 11.165ZM9.75 15.336C9.75 13.7567 9.0674 12.2552 7.87738 11.1956L6.87987 12.3159C7.75613 13.0961 8.25 14.1925 8.25 15.336H9.75ZM13.8002 19.9547C14.7061 19.3147 15.25 18.2855 15.25 17.1817H13.75C13.75 17.7872 13.4519 18.3642 12.9347 18.7296L13.8002 19.9547ZM10.9935 20.101C10.4475 20.4867 9.75 20.0779 9.75 19.5134H8.25C8.25 21.3745 10.3855 22.367 11.859 21.3261L10.9935 20.101ZM2.25 6.37307C2.25 7.53648 2.75289 8.64108 3.62728 9.41967L4.62479 8.29941C4.06416 7.80021 3.75 7.10064 3.75 6.37307H2.25ZM20.25 6.318C20.25 7.06517 19.9116 7.78069 19.3144 8.27151L20.2668 9.43032C21.2037 8.66027 21.75 7.52281 21.75 6.318H20.25ZM17.5842 3.75C19.0772 3.75 20.25 4.92011 20.25 6.318H21.75C21.75 4.05092 19.8642 2.25 17.5842 2.25V3.75ZM6.47246 2.25C4.16114 2.25 2.25 4.07558 2.25 6.37307H3.75C3.75 4.94477 4.94821 3.75 6.47246 3.75V2.25ZM16 6.25L8 6.25V7.75L16 7.75V6.25Z" />
+                            </svg>    
+                        </div>
+                    </div>
+                    <div style="width: 100%;padding: 0;">
+                        <h3 class="float-start mb-1 mt-1" style="font-family: BarlowBold;width: 100%;">
+                            Found 6 Results
+                        </h3>
+                        <div class="marquee-wrapper mb-3" style="padding-left: .1px;">
+                            <div class="marquee">
+                                <div class="marquee-group">
+                                    <a id="lastSeenImageHolder1" data-src="./Yellow Illustration Hamster Circle Sticker.png" href="#" class="marquee-img-tag-wrapper waves-effect waves-light">
+                                        <canvas id="lastSeenImageHolder1-canvas" class="hiddenCanvas"></canvas>
+                                        <img id="lastSeenImageHolder1-image" alt="">
+                                    </a>
+                                    <a id="lastSeenImageHolder2" data-src="./Yellow Illustration Hamster Circle Sticker.png" href="#" class="marquee-img-tag-wrapper waves-effect waves-light">
+                                        <canvas id="lastSeenImageHolder2-canvas" class="hiddenCanvas"></canvas>
+                                        <img id="lastSeenImageHolder2-image" alt="">
+                                    </a>
+                                    <a id="lastSeenImageHolder3" data-src="./Yellow Illustration Hamster Circle Sticker.png" href="#" class="marquee-img-tag-wrapper waves-effect waves-light">
+                                        <canvas id="lastSeenImageHolder3-canvas" class="hiddenCanvas"></canvas>
+                                        <img id="lastSeenImageHolder3-image" alt="">
+                                    </a>
+                                    <a id="lastSeenImageHolder4" data-src="./Yellow Illustration Hamster Circle Sticker.png" href="#" class="marquee-img-tag-wrapper waves-effect waves-light">
+                                        <canvas id="lastSeenImageHolder4-canvas" class="hiddenCanvas"></canvas>
+                                        <img id="lastSeenImageHolder4-image" alt="">
+                                    </a>
+                                    <a id="lastSeenImageHolder5" data-src="./Yellow Illustration Hamster Circle Sticker.png" href="#" class="marquee-img-tag-wrapper waves-effect waves-light">
+                                        <canvas id="lastSeenImageHolder5-canvas" class="hiddenCanvas"></canvas>
+                                        <img id="lastSeenImageHolder5-image" alt="">
+                                    </a>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="width: 100%;padding: 0;">
+                        <h3 class="float-start mb-2 mt-1" style="font-family: BarlowBold;width: 100%;">
+                            Titles
+                            <span class="float-right" style="color:var(--text-color);position: absolute;right:var(--body-padding);font-family: Barlow;font-size: 1rem;">See all</span>
+                        </h3>
+                        <div class="mt-2" style="width: 100%;padding: 0;">
+
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                            <a href="#" class="marquee-topic-tag-wrapper waves-effect waves-light">
+                                <div class="marquee-topic-tag-container">
+                                    <span class="marquee-topic-tag">Cooking</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="./app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="./app-assets/js/core/app-menu.js"></script>
+    <script src="./app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
+    <!-- END: Page JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="svg.min.js"></script>
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', e => {
+                button.classList.toggle('added');
+            });
+        });
+    </script>
+    <script>
+        var nav = $('.fluidnav');
+        var line = $('<div />').addClass('line');
+
+        line.appendTo(nav);
+
+        var active = nav.find('.active');
+        var pos = 0;
+        var wid = 0;
+
+        if (active.length) {
+            pos = active.position().left;
+            wid = active.width();
+            line.css({
+                left: pos,
+                width: wid
+            });
+        }
+
+        nav.find('ul li a').click(function(e) {
+            e.preventDefault();
+            if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+
+                nav.addClass('animate');
+
+                var _this = $(this);
+
+                nav.find('ul li').removeClass('active');
+
+                var position = _this.parent().position();
+                var width = _this.parent().width();
+
+                if (position.left >= pos) {
+                    line.animate({
+                        width: ((position.left - pos) + width)
+                    }, 300, function() {
+                        line.animate({
+                            width: width,
+                            left: position.left
+                        }, 150, function() {
+                            nav.removeClass('animate');
+                        });
+                        _this.parent().addClass('active');
+                    });
+                } else {
+                    line.animate({
+                        left: position.left,
+                        width: ((pos - position.left) + wid)
+                    }, 300, function() {
+                        line.animate({
+                            width: width
+                        }, 150, function() {
+                            nav.removeClass('animate');
+                        });
+                        _this.parent().addClass('active');
+                    });
+                }
+
+                pos = position.left;
+                wid = width;
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script>
+        const {
+            to,
+            set,
+            timeline
+        } = gsap
+
+        function delay(fn, ms) {
+            let timer = 0
+            return function(...args) {
+                clearTimeout(timer)
+                timer = setTimeout(fn.bind(this, ...args), ms || 0)
+            }
+        }
+
+        document.querySelectorAll('.input').forEach(elem => {
+            let clear = elem.querySelector('.clear'),
+                input = elem.querySelector('input'),
+                {
+                    classList
+                } = elem,
+                svgLine = clear.querySelector('.line'),
+                svgLineProxy = new Proxy({
+                    x: null
+                }, {
+                    set(target, key, value) {
+                        target[key] = value
+                        if (target.x !== null) {
+                            svgLine.setAttribute('d', getPath(target.x, .1925))
+                        }
+                        return true
+                    },
+                    get(target, key) {
+                        return target[key]
+                    }
+                })
+
+            svgLineProxy.x = 0
+
+            input.addEventListener('input', delay(e => {
+                let bool = input.value.length
+                to(elem, {
+                    '--clear-scale': bool ? 1 : 0,
+                    duration: bool ? .5 : .15,
+                    ease: bool ? 'elastic.out(1, .7)' : 'none'
+                })
+                to(elem, {
+                    '--clear-opacity': bool ? 1 : 0,
+                    duration: .15
+                })
+            }, 250))
+
+            clear.addEventListener('click', e => {
+                classList.add('clearing')
+                set(elem, {
+                    '--clear-swipe-left': (input.offsetWidth - 16) * -1 + 'px'
+                })
+                to(elem, {
+                    keyframes: [{
+                        '--clear-rotate': '45deg',
+                        duration: .25
+                    }, {
+                        '--clear-arrow-x': '2px',
+                        '--clear-arrow-y': '-2px',
+                        duration: .15
+                    }, {
+                        '--clear-arrow-x': '-3px',
+                        '--clear-arrow-y': '3px',
+                        '--clear-swipe': '-3px',
+                        duration: .15,
+                        onStart() {
+                            to(svgLineProxy, {
+                                x: 3,
+                                duration: .1,
+                                delay: .05
+                            })
+                        }
+                    }, {
+                        '--clear-swipe-x': 1,
+                        '--clear-x': (input.offsetWidth) * -1 + 'px',
+                        duration: .45,
+                        onComplete() {
+                            input.value = ''
+                            input.focus()
+                            to(elem, {
+                                '--clear-arrow-offset': '4px',
+                                '--clear-arrow-offset-second': '4px',
+                                '--clear-line-array': '8.5px',
+                                '--clear-line-offset': '27px',
+                                '--clear-long-offset': '24px',
+                                '--clear-rotate': '0deg',
+                                '--clear-arrow-o': 1,
+                                duration: 0,
+                                delay: .7,
+                                onStart() {
+                                    classList.remove('clearing')
+                                }
+                            })
+                            to(elem, {
+                                '--clear-opacity': 0,
+                                duration: .2,
+                                delay: .55
+                            })
+                            to(elem, {
+                                '--clear-arrow-o': 0,
+                                '--clear-arrow-x': '0px',
+                                '--clear-arrow-y': '0px',
+                                '--clear-swipe': '0px',
+                                duration: .15
+                            })
+                            to(svgLineProxy, {
+                                x: 0,
+                                duration: .45,
+                                ease: 'elastic.out(1, .75)'
+                            })
+                        }
+                    }, {
+                        '--clear-swipe-x': 0,
+                        '--clear-x': '0px',
+                        duration: .4,
+                        delay: .35
+                    }]
+                })
+                to(elem, {
+                    '--clear-arrow-offset': '0px',
+                    '--clear-arrow-offset-second': '8px',
+                    '--clear-line-array': '28.5px',
+                    '--clear-line-offset': '57px',
+                    '--clear-long-offset': '17px',
+                    duration: .2
+                })
+            })
+        })
+
+        function getPoint(point, i, a, smoothing) {
+            let cp = (current, previous, next, reverse) => {
+                    let p = previous || current,
+                        n = next || current,
+                        o = {
+                            length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
+                            angle: Math.atan2(n[1] - p[1], n[0] - p[0])
+                        },
+                        angle = o.angle + (reverse ? Math.PI : 0),
+                        length = o.length * smoothing;
+                    return [current[0] + Math.cos(angle) * length, current[1] + Math.sin(angle) * length];
+                },
+                cps = cp(a[i - 1], a[i - 2], point, false),
+                cpe = cp(point, a[i - 1], a[i + 1], true);
+            return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
+        }
+
+        function getPath(x, smoothing) {
+            return [
+                [2, 2],
+                [12 - x, 12 + x],
+                [22, 22]
+            ].reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '')
+        }
+    </script>
+    <script src="./smartcrop.js"></script>
+    <script src="./smartCropImage.js"></script>
+    <script>
+        smartCropping('lastSeenImageHolder1')
+        smartCropping('lastSeenImageHolder2')
+        smartCropping('lastSeenImageHolder3')
+        smartCropping('lastSeenImageHolder4')
+        smartCropping('lastSeenImageHolder5')
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>
