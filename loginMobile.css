@@ -105,7 +105,7 @@
     font-size: 1.32rem;
     box-shadow: 0 9px 60px 0 var(--mobile-shadow);
     text-align: center;
-    font-family: BarlowMedium;
+    
 }
 
 .form-button-container .waves-float:active {

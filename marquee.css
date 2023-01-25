@@ -60,7 +60,7 @@
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
-    font-family: BarlowMedium;
+    
     padding: .61rem;
     background-color: var(--bg-color-1a);
     border-radius: .7rem;
@@ -77,7 +77,7 @@
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
-    font-family: BarlowMedium;
+    
     padding: .61rem;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -97,7 +97,7 @@
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
-    font-family: BarlowMedium;
+    
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;
@@ -116,7 +116,7 @@
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
-    font-family: BarlowMedium;
+    
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;
@@ -137,7 +137,7 @@
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
-    font-family: BarlowMedium;
+    
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;

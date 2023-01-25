@@ -19,8 +19,47 @@ PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
 
-/* :root {
+@font-face {
+	font-family: Barlow;
+	src: url(Barlow-Regular_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowSemiBold;
+	src: url(Barlow-SemiBold_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowBlack;
+	src: url(Barlow-Black_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: BarlowBold;
+	src: url(Barlow-Bold_2);
+	/* font-display: swap; */
+}
+
+@font-face {
+	font-family: BarlowMedium;
+	src: url(Barlow-Medium_2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: SFPro;
+	src: url(SF-Pro-Display-Regular.otf);
+	font-display: swap;
+}
+
+
+
+:root {
 	--body-width: 30rem;
+	--body-font: SFPro;
 	--body-padding: 1.2rem;
 	--text-color: #E74F4E;
 	--bg-color-light: #fff;
@@ -39,10 +78,11 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
-} */
+}
 
 :root {
 	--body-width: 30rem;
+	--body-font: SFPro;
 	--body-padding: 1.2rem;
 	--text-color: #342C2A;
 	--bg-color-light: #fff;
@@ -67,6 +107,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 /* :root {
 	--body-width: 30rem;
+	--body-font: 'Barlow';
 	--body-padding: 1.2rem;
 	--text-color: #C25E23;
 	--bg-color-light: #fff;
@@ -91,6 +132,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 /* :root {
 	--body-width: 30rem;
+	--body-font: 'Barlow';
 	--body-padding: 1.2rem;
 	--text-color: #11471c;
 	--bg-color-light: #fff;
@@ -124,50 +166,13 @@ h5,
 h6,
 .h6 {
 	color: var(--text-color);
+	font-family: var(--body-font) !important;
 }
 
-@font-face {
-	font-family: Barlow;
-	src: url(Barlow-Regular_2);
-	font-display: swap;
+span {
+	font-family: var(--body-font) !important;
 }
 
-@font-face {
-	font-family: BarlowSemiBold;
-	src: url(Barlow-SemiBold_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowBlack;
-	src: url(Barlow-Black_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowBold;
-	src: url(Barlow-Bold_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowMedium;
-	src: url(Barlow-Medium_2);
-	font-display: swap;
-}
-
-
-@font-face {
-	font-family: madani;
-	src: url('./Madani-Arabic-Font-Family/Madani\ Arabic\ Regular.ttf');
-	font-display: swap;
-}
-
-@font-face {
-	font-family: madaniLight;
-	src: url('./Madani-Arabic-Font-Family/Madani\ Arabic\ Light.ttf');
-	font-display: swap;
-}
 
 ::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
