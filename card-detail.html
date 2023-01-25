@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
     <meta name="description" content="Create stunning custom designs with our easy-to-use online editor. With a wide range of customization options and an intuitive interface, our easy-to-use online tool is perfect for businesses, event planners, and individual consumers looking to create personalized products. Whether you need custom invitations, promotional materials, or social media graphics, our editor has everything you need. Try it out today and see the difference it can make for your design projects.">
-<meta name="keywords" content="Custom design, Online editor, Design tool, Customization, Personalization, Graphic design, Digital products, Custom invitations, Custom logos, Promotional materials">
-<meta name="author" content="Classified">
- <title>Classified Tools</title>
+    <meta name="keywords" content="Custom design, Online editor, Design tool, Customization, Personalization, Graphic design, Digital products, Custom invitations, Custom logos, Promotional materials">
+    <meta name="author" content="Classified">
+    <title>Classified Tools</title>
     <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="productDetail.css">
     <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="fluidtab.css">
+    
     <link rel="stylesheet" href="mason.css">
 
     <link rel="stylesheet" href="marquee.css">
@@ -49,83 +49,7 @@
     <link rel="stylesheet" href="productDetail.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="hamburger.css">
-    <style>
-        
 
-        #imageBox:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgb(0 100 0 / 2%);
-            /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%) */
-        }
-
-        .hiddenCanvas {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            opacity: 0;
-            z-index: -11111111;
-        }
-
-        .sideHolderWrapper {
-            position: absolute;
-            width: 4.193rem;
-            height: 18rem;
-            border-radius: 1.6rem;
-            background: transparent;
-            z-index: 1000;
-            bottom: 1rem;
-            right: var(--body-padding);
-            /* box-shadow: 12px 12px 32px var(--text-color)1a;
-            background: var(--text-color)0a; */
-        }
-
-
-        .sideHolder {
-            position: relative;
-            width: 4.193rem;
-            height: 4.193rem;
-            border-radius: 1.6rem;
-            z-index: 1000;
-            margin-bottom: .51rem;
-            overflow: hidden;
-            
-        }
-
-        .sideHolderWrapper .active {
-            width: 4.393rem;
-            height: 4.393rem;
-            border: .2rem solid var(--text-color);
-        }
-        .sideHolderCount {
-            display: flex;
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #fff;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #011605cc;
-            /* background: radial-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 80%)); */
-        }
-
-        .sideHolderOverlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 100, 0, 0.0382);
-            /* background: radial-gradient(rgb(71 68 68 / 20%), rgb(57 54 54 / 50%)); */
-        }
-    </style>
 </head>
 <!-- END: Head-->
 
@@ -154,7 +78,7 @@
             <div class="content-body">
                 <div class="auth-inner row m-0" style="width: 100%;position: relative;">
                     <div style="width: 100%;height: 100%;background: #fff;padding: 0;overflow: hidden;position: relative;">
-                        <div id="imageBox" data-src="a1.webp"  style="height: 70vh;padding: 0rem;border-radius: 0 0 2rem 2rem;box-shadow: 3px 4px 33px rgb(233, 232, 220);">
+                        <div id="imageBox" data-src="a1.webp" style="height: 70vh;padding: 0rem;border-radius: 0 0 2rem 2rem;box-shadow: 3px 4px 33px rgb(233, 232, 220);">
                             <canvas id="imageBox-canvas" class="hiddenCanvas"></canvas>
                             <img id="imageBox-image" alt="">
                             <div class="sideHolderWrapper">
