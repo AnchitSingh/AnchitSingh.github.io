@@ -78,6 +78,13 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
+		/* buttons */
+		--button-color: var(--bg-color-3a);
+	--button-text: var(--text-color);
+	/* badges */
+	--badge-color: var(--bg-color-1a);
+	--badge-hover-color: var(--bg-color-5a);
+	--badge-text: var(--text-color);
 }
 
 :root {
@@ -101,11 +108,86 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
+		/* buttons */
+		--button-color: var(--bg-color-3a);
+	--button-text: var(--text-color);
+	/* badges */
+	--badge-color: var(--bg-color-1a);
+	--badge-hover-color: var(--bg-color-5a);
+	--badge-text: var(--text-color);
 }
+/* 
+:root {
+	--body-width: 30rem;
+	--body-font: SFPro;
+	--body-padding: 1.2rem;
+	--text-color: #5F3037;
+	--bg-color-light: #fff;
+	--bg-color: #EFCCB2;
+	--bg-color-0a: #EFCCB205;
+	--bg-color-1a: #EFCCB21a;
+	--bg-color-2a: #EFCCB22a;
+	--bg-color-3a: #EFCCB23a;
+	--bg-color-4a: #EFCCB24a;
+	--bg-color-5a: #EFCCB25a;
+	--bg-color-6a: #EFCCB26a;
+	--bg-color-7a: #EFCCB27a;
+	--bg-color-8a: #EFCCB28a;
+	--bg-color-9a: #EFCCB29a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap))
+		
+	--button-color: var(--bg-color-3a);
+	--button-text: var(--text-color);
+	
+	--badge-color: var(--bg-color-1a);
+	--badge-hover-color: var(--bg-color-5a);
+	--badge-text: var(--text-color);
+} */
+/* 
+:root {
+	--body-width: 30rem;
+	--body-font: SFPro;
+	--body-padding: 1.2rem;
+	--text-color: #62230f;
+	--bg-color-light: #fff;
+	--bg-color: #f89a3b;
+	--bg-color-0a: #f89a3b05;
+	--bg-color-1a: #f89a3b1a;
+	--bg-color-2a: #f89a3b2a;
+	--bg-color-3a: #f89a3b3a;
+	--bg-color-4a: #f89a3b4a;
+	--bg-color-5a: #f89a3b5a;
+	--bg-color-6a: #f89a3b6a;
+	--bg-color-7a: #f89a3b7a;
+	--bg-color-8a: #f89a3b8a;
+	--bg-color-9a: #f89a3b9a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap));
+	/* buttons */
+	--button-color: var(--bg-color-3a);
+	--button-text: var(--text-color);
+	/* badges */
+	--badge-color: #fee7ba4a;
+	--badge-hover-color: var(--bg-color-5a);
+	--badge-text: #be551d;
+
+
+} */
 
 
 
-/* :root {
+
+
+
+
+
+/* Skin color
+ :root {
 	--body-width: 30rem;
 	--body-font: 'Barlow';
 	--body-padding: 1.2rem;
@@ -169,8 +251,12 @@ h6,
 	font-family: var(--body-font) !important;
 }
 
-span {
+span, input, button,div {
 	font-family: var(--body-font) !important;
+}
+
+.card {
+	background: var(--bg-color-0a);
 }
 
 
