@@ -50,9 +50,9 @@
     background: var(--unspoken-card-bg) !important;
 }
 
-/* .marquee-tag-wrapper span {
-    font-family: SFPro !important;
-} */
+.marquee-tag-wrapper span {
+    font-size:inherit
+}
 
 
 .marquee-tag-wrapper:hover {
