@@ -1,0 +1,27 @@
+:root {
+    --body-font: lulu;
+    --unspoken-app-bg: #173b2c03;
+    --unspoken-app-text-dark: #173b2c;
+    --unspoken-app-text-light: #f8f8ff;
+    --unspoken-app-dark-bg: #173b2c4a;
+
+    --unspoken-card-bg: #173b2c0f;
+    --unspoken-card-title: #173b2c;
+    --unspoken-card-link: #173b2cb4;
+    --unspoken-card-price: #173b2ce7;
+    --unspoken-card-btn-color: #173b2c0a;
+    --unspoken-card-btn-bg: #173b2c;
+    --unspoken-card-like-button-fill: #173b2c8a;
+    --unspoken-card-like-button-bg: #fff;
+    --unspoken-card-like-button-fill: #173b2c8a;
+    --unspoken-card-like-button-fill: #173b2c8a;
+    --unspoken-card-like-button-fill: #173b2c8a;
+    --unspoken-card-like-button-fill: #173b2c8a;
+
+    --unspoken-topbar-right-icon-bg: #fff;
+    --unspoken-topbar-box-shadow: #173b2c3a;
+    
+    --unspoken-app-search-bg: #173b2c0e;
+    --unspoken-app-search-border:#173b2c2a;
+
+}

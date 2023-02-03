@@ -1,32 +1,37 @@
+@import url(color/pink.css);
+@import url(color/purple.css);
+@import url(color/test.css);
+
+
 :root {
-    /* 5E376D 
-    7e5c8f  */
-    --unspoken-app-bg: #f4755803;
-    --unspoken-app-text-dark: #f47558;
-    --unspoken-app-text-light: #f8f8ff;
-    --unspoken-app-dark-bg: #f475584a;
+	--body-width: 30rem;
+	--body-padding: 1.2rem;
 
-    --unspoken-card-bg: rgba(244, 117, 88, 0.06);
-    --unspoken-card-title: #f47558;
-    --unspoken-card-link: rgba(244, 117, 88, 0.704);
-    --unspoken-card-price: #f47558e7;
-    --unspoken-card-btn-color: #f475580a;
-    --unspoken-card-btn-bg: #f47558;
-    --unspoken-card-like-button-fill: #f475588a;
-    --unspoken-card-like-button-bg: #fff;
-    --unspoken-card-like-button-fill: #f475588a;
-    --unspoken-card-like-button-fill: #f475588a;
-    --unspoken-card-like-button-fill: #f475588a;
-    --unspoken-card-like-button-fill: #f475588a;
+	--gap: 1.5rem;
+	--duration: 30s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap));
 
-    --unspoken-topbar-right-icon-bg: #fff;
-    --unspoken-topbar-box-shadow: #f475583a;
-    
-    --unspoken-app-search-bg: #f475570e;
-    --unspoken-app-search-border:#f475582a;
+	--button-color: #99780005;
+	--button-text: var(--text-color);
+
+	--badge-color: #fee7ba4a;
+	--badge-hover-color: #fee7ba4a;
+	--badge-text: #be551d !important;
+	--badge-hover-text: #be551d !important;
+	
+
+	--badge-color: #9978001a;
+	--badge-hover-color: #9978002a;
+	--badge-text: #2d2d2d !important;
+	--badge-hover-text: #2d2d2d !important;
+	--badge-font-size: 1.15rem !important;
+	--badge-font-weight: 500;
+	--badge-padding: .5rem;
+	--badge-border-radius: .75rem;
+
 
 }
-
 
 h1,
 .h1,
