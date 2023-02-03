@@ -40,27 +40,31 @@
 }
 
 .marquee-tag-wrapper {
+    border-radius: var(--badge-border-radius);
     text-decoration: none;
-    color: var(--badge-text);
-    font-size: 1rem;
-    font-weight: 500;
-    
-    padding: .61rem;
-    background-color: var(--badge-color);
-    border-radius: .7rem;
+    color: var(--unspoken-card-title) !important;
+    font-size: 1em;
+    font-weight: var(--badge-font-weight);
+    padding: .5rem 1rem;
+    height: max-content;
+    background: var(--unspoken-card-bg) !important;
 }
+
+/* .marquee-tag-wrapper span {
+    font-family: SFPro !important;
+} */
 
 
 .marquee-tag-wrapper:hover {
     background-color: var(--badge-hover-color);
-    color: #1a1a1a
+    color: var(--badge-hover-text)
 }
 
 
 /* TOPIC TAGS */
 
 .marquee-topic-tag-wrapper:hover {
-    background-color:var(--bg-color-2a);
+    background-color: var(--bg-color-2a);
     color: var(--badge-text)
 }
 
@@ -68,9 +72,8 @@
 .marquee-topic-tag-wrapper {
     text-decoration: none;
     color: var(--badge-text);
-    font-size: 1rem;
-    font-weight: 500;
-    
+    font-size: var(--badge-font-size);
+    font-weight: var(--badge-font-weight);
     padding: .61rem;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -85,7 +88,7 @@
     color: var(--badge-text);
     font-size: 1rem;
     font-weight: 500;
-    
+
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;
@@ -105,13 +108,14 @@
     color: var(--badge-text);
     font-size: 1rem;
     font-weight: 500;
-    
+
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;
     background-color: var(--bg-color-3a);
     border-radius: .7rem;
 }
+
 .marquee-cart-tag-wrapper::before {
     content: "";
     position: absolute;
@@ -119,6 +123,7 @@
     height: 100%;
     background: rgb(0 100 0 / 2%);
 }
+
 .marquee-cart-tag-wrapper:hover {
     background-color: var(--badge-hover-color);
     color: var(--badge-text)
@@ -133,7 +138,7 @@
     color: var(--badge-text);
     font-size: 1rem;
     font-weight: 500;
-    
+
     padding: 0rem;
     width: 4.193rem;
     height: 4.193rem;

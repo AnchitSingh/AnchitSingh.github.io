@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Create stunning custom designs with our easy-to-use online editor. With a wide range of customization options and an intuitive interface, our easy-to-use online tool is perfect for businesses, event planners, and individual consumers looking to create personalized products. Whether you need custom invitations, promotional materials, or social media graphics, our editor has everything you need. Try it out today and see the difference it can make for your design projects.">
+    <meta name="keywords" content="Custom design, Online editor, Design tool, Customization, Personalization, Graphic design, Digital products, Custom invitations, Custom logos, Promotional materials">
+    <meta name="author" content="Classified">
+    <title>Classified Tools</title>
+    <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/authentication.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+    <!-- <link rel="stylesheet" href="loginMobile.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="button.css">
+
+    <link rel="stylesheet" href="mason.css">
+
+    <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link rel="stylesheet" href="productDetail.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hamburger.css">
+
+    <link rel="stylesheet" href="masonry.css">
+    <link rel="stylesheet" href="unspokenArt.css">
+    <link rel="stylesheet" href="addCross.css">
+    <link rel="stylesheet" href="clearInput.css">
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body style="background: #fff;font-family: SanF !important;" class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+    <!-- BEGIN: Content-->
+    <div class="app-content content" style="max-width: var(--body-width);background: var(--unspoken-app-bg) !important;">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <!-- topbar start -->
+            <div class="unspoken-topbar">
+
+                <a href="#" class="unspoken-avatar-group">
+                    <div class="home-avatar" id="homeAvatarHolder" data-src="./assets/profile.jpg">
+                        <canvas class="hiddenCanvas" id="homeAvatarHolder-canvas"></canvas>
+                        <img alt="" id="homeAvatarHolder-image">
+                    </div>
+
+                </a>
+                <a href="./card-cart.html" class="unspoken-right-icon">
+                    <div class="home-right-icon">
+                        <!-- <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 3.80335C0 4.39983 0.499683 4.90701 1.08233 4.90701H4.77539L6.59133 17.3439C6.85008 19.1008 7.78805 20.1838 9.57164 20.1838H23.2137C23.7614 20.1838 24.2463 19.7582 24.2463 19.1488C24.2463 18.5416 23.7614 18.1202 23.2137 18.1202H9.83203C9.26109 18.1202 8.90999 17.7147 8.82139 17.1053L8.63811 15.8917H23.3004C25.0894 15.8917 26.0316 14.8033 26.2882 13.0305L27.173 7.1371C27.1964 6.97843 27.2241 6.78249 27.2241 6.65171C27.2241 5.98375 26.7494 5.51477 25.9509 5.51477H7.14444L6.94381 4.22687C6.80975 3.21906 6.39937 2.70929 5.1007 2.70929H1.08233C0.499683 2.70929 0 3.21437 0 3.80335ZM8.48602 24.0102C8.48602 25.1483 9.39305 26.0415 10.527 26.0415C11.6555 26.0415 12.5562 25.1483 12.5562 24.0102C12.5562 22.8859 11.6555 21.981 10.527 21.981C9.39305 21.981 8.48602 22.8859 8.48602 24.0102ZM19.3249 24.0102C19.3249 25.1483 20.2395 26.0415 21.3638 26.0415C22.4998 26.0415 23.4026 25.1483 23.4026 24.0102C23.4026 22.8859 22.4998 21.981 21.3638 21.981C20.2395 21.981 19.3249 22.8859 19.3249 24.0102Z" fill="var(--text-color)" />
+                        </svg> -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.25 7.25V4.95C13.25 3.8299 13.25 3.26984 13.032 2.84202C12.8403 2.46569 12.5343 2.15973 12.158 1.96799C11.7301 1.75 11.1701 1.75 10.05 1.75H9.94999C8.82988 1.75 8.26983 1.75 7.842 1.96799C7.46568 2.15973 7.15972 2.46569 6.96797 2.84202C6.74998 3.26984 6.74998 3.8299 6.74998 4.95V7.25M6.19579 18.25H13.8042C15.0014 18.25 15.6 18.25 16.0436 18.0114C16.4334 17.8018 16.7427 17.4688 16.923 17.0646C17.1281 16.6046 17.0839 16.0076 16.9954 14.8136L16.4695 7.71361C16.3921 6.66903 16.3534 6.14675 16.1253 5.75104C15.9244 5.40263 15.6232 5.12288 15.2609 4.94829C14.8494 4.75 14.3257 4.75 13.2783 4.75H6.72171C5.67428 4.75 5.15056 4.75 4.73908 4.94829C4.37679 5.12288 4.07554 5.40263 3.87466 5.75104C3.64652 6.14675 3.60783 6.66903 3.53046 7.71361L3.00453 14.8136C2.91609 16.0076 2.87187 16.6046 3.07701 17.0646C3.25728 17.4688 3.56653 17.8018 3.95633 18.0114C4.39993 18.25 4.99855 18.25 6.19579 18.25Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </a>
+            </div>
+            <!-- topbar end -->
+            <div class="content-body">
+                <div class="auth-inner row m-0" style="width: 100%;position: relative;padding:6rem var(--body-padding);">
+                    <!-- <div class="unspoken-home-search-wrapper">
+                        <input type="text" class="unspoken-search" placeholder=" ">
+                        <label for="input" alt="Before Typing" placeholder="After Typing">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 11.5372C2 16.801 6.27757 21.0765 11.5393 21.0765C13.4961 21.0765 15.2919 20.4751 16.7891 19.46L22.1729 24.8534C22.5099 25.1905 22.9564 25.351 23.4263 25.351C24.4236 25.351 25.1368 24.5973 25.1368 23.6117C25.1368 23.1481 24.9666 22.7155 24.6446 22.3935L19.3022 17.0202C20.4207 15.4815 21.0786 13.5898 21.0786 11.5372C21.0786 6.27547 16.801 2 11.5393 2C6.27757 2 2 6.27547 2 11.5372ZM4.48482 11.5372C4.48482 7.64491 7.64702 4.48482 11.5393 4.48482C15.4316 4.48482 18.5916 7.64491 18.5916 11.5372C18.5916 15.4316 15.4316 18.5916 11.5393 18.5916C7.64702 18.5916 4.48482 15.4316 4.48482 11.5372Z" fill="#BBC1E1" />
+                            </svg>
+
+                            Search
+                        </label>
+                    </div> -->
+                    <!-- <div style="padding: 0;width: 100%;height: 4rem;background: #f5f5f5;border-radius: 1.5rem;margin-bottom: 2rem;border: 1px solid #f4f4f4;">
+                        <input type="text" style="width: 100%;height: 100%;border-radius: inherit;background: transparent;outline: none;border: none;padding: 1rem 2rem;font-size: 1.1rem;color: #2d2d2d;line-height: 26px;letter-spacing: .11ch;">
+                    </div> -->
+                    <!-- <div class="input mb-2" style="background: rgb(245, 245, 245);border-radius: 1.25rem;color: rgb(45, 45, 45);height: 3.5rem;border: 1px solid #F4f4f4;--clear-scale:0; --clear-opacity:0;padding: 0;">
+                        <div class="text" style="display: flex;flex-direction: row;height: inherit;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                            </svg>
+
+                            <input type="text" placeholder="Search" style="padding: 1rem 2rem;font-size: 1.3rem;height: inherit;">
+                        </div>
+                        <button class="clear">
+                            <svg viewBox="0 0 24 24">
+                                <path class="line" d="M 2,2 C 3.925,3.925 8.149999999999999,8.15 12,12 C 15.85,15.85 20.075,20.075 22,22"></path>
+                                <path class="long" d="M9 15L20 4"></path>
+                                <path class="arrow" d="M13 11V7"></path>
+                                <path class="arrow" d="M17 11H13"></path>
+                            </svg>
+                        </button>
+                    </div> -->
+                    <!-- <span class="float-start mb-1" style="padding: 0 !important;display: flex;flex-direction: row;justify-content: space-between;font-size: 1.9rem;color: var(--unspoken-app-text-dark);">
+                        Hello Chris
+                    </span> -->
+                    <div class="input mb-2">
+                        <div class="text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"></path>
+                            </svg>
+
+                            <input type="text" placeholder="Search here...">
+                        </div>
+                        <button class="clear">
+                            <svg viewBox="0 0 24 24">
+                                <path class="line" d="M 2,2 C 3.925,3.925 8.149999999999999,8.15 12,12 C 15.85,15.85 20.075,20.075 22,22"></path>
+                                <path class="long" d="M9 15L20 4"></path>
+                                <path class="arrow" d="M13 11V7"></path>
+                                <path class="arrow" d="M17 11H13"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="float-start mb-1" style="padding: 0 !important;display: flex;flex-direction: row;justify-content: space-between;font-size: 1.9rem;color: var(--unspoken-app-text-dark);margin-top: 1.2rem;">
+                        Categories
+                        <span class="float-right" style="font-size: .81rem;">See all</span>
+                    </span>
+                    <div class="marquee-wrapper mb-3" style="padding: 0 !important;">
+                        <div class="marquee">
+                            <div class="marquee-group">
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
+                                    <div class="marquee-tag-container">
+                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                    </div>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unspoken-card-wrapper">
+                        <div class="unspoken-card">
+                            <div class="unspoken-card-header" data-src="pp.png" id="cardImageHolder1">
+                                <canvas class="hiddenCanvas" id="cardImageHolder1-canvas"></canvas>
+                                <img alt="" id="cardImageHolder1-image">
+                                <div class="unspoken-like-button active">
+                                    <svg style="margin: auto;" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="unspoken-card-body">
+                                <span class="unspoken-title">Wedding Card</span>
+                                <br>
+                                <a href="">Tim Cook</a>
+                                <div style="width: 100%;display: flex;flex-direction: row;justify-content: space-between;height: 3rem;align-items: center;margin-top: 1rem;">
+                                    <div style="font-size: 2rem;color: var(--unspoken-card-price);">$27<span style="font-size: 1rem;">.99</span></div>
+                                    <div style="width: 2.5rem;height: 2.5rem;background: var(--unspoken-card-btn-bg);border-radius: .75rem;display: flex;position: relative;">
+                                        <button class="add-remove-button" ba>
+                                            <div></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unspoken-card">
+                            <div class="unspoken-card-header" data-src="pp4.jpg" id="cardImageHolder2">
+                                <canvas class="hiddenCanvas" id="cardImageHolder2-canvas"></canvas>
+                                <img alt="" id="cardImageHolder2-image">
+                                <div class="unspoken-like-button">
+                                    <svg style="margin: auto;" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="unspoken-card-body">
+                                <span class="unspoken-title">Wedding Card</span>
+                                <br>
+                                <a href="">Tim Cook</a>
+                                <div style="width: 100%;display: flex;flex-direction: row;justify-content: space-between;height: 3rem;align-items: center;margin-top: 1rem;">
+                                    <div style="font-size: 2rem;color: var(--unspoken-card-price);">$27<span style="font-size: 1rem;">.99</span></div>
+                                    <div style="width: 2.5rem;height: 2.5rem;background: var(--unspoken-card-btn-bg);border-radius: .75rem;display: flex;position: relative;">
+                                        <button class="add-remove-button" ba>
+                                            <div></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unspoken-card">
+                            <div class="unspoken-card-header" data-src="pp6.jpg" id="cardImageHolder3">
+                                <canvas class="hiddenCanvas" id="cardImageHolder3-canvas"></canvas>
+                                <img alt="" id="cardImageHolder3-image">
+                                <div class="unspoken-like-button">
+                                    <svg style="margin: auto;" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="unspoken-card-body">
+                                <span class="unspoken-title">Wedding Card</span>
+                                <br>
+                                <a href="">Tim Cook</a>
+                                <div style="width: 100%;display: flex;flex-direction: row;justify-content: space-between;height: 3rem;align-items: center;margin-top: 1rem;">
+                                    <div style="font-size: 2rem;color: var(--unspoken-card-price);">$27<span style="font-size: 1rem;">.99</span></div>
+                                    <div style="width: 2.5rem;height: 2.5rem;background: var(--unspoken-card-btn-bg);border-radius: .75rem;display: flex;position: relative;">
+                                        <button class="add-remove-button" ba>
+                                            <div></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="./app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="./app-assets/js/core/app-menu.js"></script>
+    <script src="./app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
+    <!-- END: Page JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="svg.min.js"></script>
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        const heartButton = document.querySelector('.heart-button');
+
+        heartButton.addEventListener('click', function() {
+
+            heartButton.classList.add('active');
+
+            if (heartButton.classList.contains('active')) {
+                if (!heartButton.classList.contains('fallow')) {
+                    heartButton.classList.add('fallow');
+
+                } else {
+                    heartButton.classList.remove('fallow');
+
+                }
+            }
+        });
+    </script>
+    <script src="./smartcrop.js"></script>
+    <script src="./smartCropImage.js"></script>
+    <script>
+        function convertRemToPixels(rem) {
+            return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        }
+        smartCropping('homeAvatarHolder')
+        smartCropping('cardImageHolder1')
+        smartCropping('cardImageHolder2')
+        smartCropping('cardImageHolder3')
+    </script>
+    <script>
+        document.querySelectorAll('.add-remove-button').forEach(button => {
+            button.addEventListener('click', e => {
+                if (button.classList.contains('inactive')) {
+                    button.classList.remove('active', 'inactive');
+                    button.classList.add('active');
+                } else {
+                    if (button.classList.contains('active')) {
+                        button.classList.add('inactive');
+                    }
+                }
+                if (!button.classList.contains('active')) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script>
+        const {
+            to,
+            set,
+            timeline
+        } = gsap
+
+        function delay(fn, ms) {
+            let timer = 0
+            return function(...args) {
+                clearTimeout(timer)
+                timer = setTimeout(fn.bind(this, ...args), ms || 0)
+            }
+        }
+
+        document.querySelectorAll('.input').forEach(elem => {
+            let clear = elem.querySelector('.clear'),
+                input = elem.querySelector('input'),
+                {
+                    classList
+                } = elem,
+                svgLine = clear.querySelector('.line'),
+                svgLineProxy = new Proxy({
+                    x: null
+                }, {
+                    set(target, key, value) {
+                        target[key] = value
+                        if (target.x !== null) {
+                            svgLine.setAttribute('d', getPath(target.x, .1925))
+                        }
+                        return true
+                    },
+                    get(target, key) {
+                        return target[key]
+                    }
+                })
+
+            svgLineProxy.x = 0
+
+            input.addEventListener('input', delay(e => {
+                let bool = input.value.length
+                to(elem, {
+                    '--clear-scale': bool ? 1 : 0,
+                    duration: bool ? .5 : .15,
+                    ease: bool ? 'elastic.out(1, .7)' : 'none'
+                })
+                to(elem, {
+                    '--clear-opacity': bool ? 1 : 0,
+                    duration: .15
+                })
+            }, 250))
+
+            clear.addEventListener('click', e => {
+                classList.add('clearing')
+                set(elem, {
+                    '--clear-swipe-left': (input.offsetWidth - 16) * -1 + 'px'
+                })
+                to(elem, {
+                    keyframes: [{
+                        '--clear-rotate': '45deg',
+                        duration: .25
+                    }, {
+                        '--clear-arrow-x': '2px',
+                        '--clear-arrow-y': '-2px',
+                        duration: .15
+                    }, {
+                        '--clear-arrow-x': '-3px',
+                        '--clear-arrow-y': '3px',
+                        '--clear-swipe': '-3px',
+                        duration: .15,
+                        onStart() {
+                            to(svgLineProxy, {
+                                x: 3,
+                                duration: .1,
+                                delay: .05
+                            })
+                        }
+                    }, {
+                        '--clear-swipe-x': 1,
+                        '--clear-x': (input.offsetWidth) * -1 + 'px',
+                        duration: .45,
+                        onComplete() {
+                            input.value = ''
+                            input.focus()
+                            to(elem, {
+                                '--clear-arrow-offset': '4px',
+                                '--clear-arrow-offset-second': '4px',
+                                '--clear-line-array': '8.5px',
+                                '--clear-line-offset': '27px',
+                                '--clear-long-offset': '24px',
+                                '--clear-rotate': '0deg',
+                                '--clear-arrow-o': 1,
+                                duration: 0,
+                                delay: .7,
+                                onStart() {
+                                    classList.remove('clearing')
+                                }
+                            })
+                            to(elem, {
+                                '--clear-opacity': 0,
+                                duration: .2,
+                                delay: .55
+                            })
+                            to(elem, {
+                                '--clear-arrow-o': 0,
+                                '--clear-arrow-x': '0px',
+                                '--clear-arrow-y': '0px',
+                                '--clear-swipe': '0px',
+                                duration: .15
+                            })
+                            to(svgLineProxy, {
+                                x: 0,
+                                duration: .45,
+                                ease: 'elastic.out(1, .75)'
+                            })
+                        }
+                    }, {
+                        '--clear-swipe-x': 0,
+                        '--clear-x': '0px',
+                        duration: .4,
+                        delay: .35
+                    }]
+                })
+                to(elem, {
+                    '--clear-arrow-offset': '0px',
+                    '--clear-arrow-offset-second': '8px',
+                    '--clear-line-array': '28.5px',
+                    '--clear-line-offset': '57px',
+                    '--clear-long-offset': '17px',
+                    duration: .2
+                })
+            })
+        })
+
+        function getPoint(point, i, a, smoothing) {
+            let cp = (current, previous, next, reverse) => {
+                    let p = previous || current,
+                        n = next || current,
+                        o = {
+                            length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
+                            angle: Math.atan2(n[1] - p[1], n[0] - p[0])
+                        },
+                        angle = o.angle + (reverse ? Math.PI : 0),
+                        length = o.length * smoothing;
+                    return [current[0] + Math.cos(angle) * length, current[1] + Math.sin(angle) * length];
+                },
+                cps = cp(a[i - 1], a[i - 2], point, false),
+                cpe = cp(point, a[i - 1], a[i + 1], true);
+            return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
+        }
+
+        function getPath(x, smoothing) {
+            return [
+                [2, 2],
+                [12 - x, 12 + x],
+                [22, 22]
+            ].reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '')
+        }
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="clearInput.css">
+
+    <link rel="stylesheet" href="masonry.css">
 </head>
 <!-- END: Head-->
 
@@ -115,45 +117,45 @@
                             </svg>
                         </button>
                     </div>
-                    <span class="float-start mb-1 mt-1" style="padding: 0 !important;display: flex;flex-direction: row;justify-content: space-between;font-size: 2rem;font-family: SFProMedium !important;color: var(--text-color);">
+                    <h3 class="float-start mb-1 mt-1" style="padding: 0 !important;display: flex;flex-direction: row;justify-content: space-between;">
                         Categories
                         <span class="float-right" style="color:var(--text-color);font-size: .81rem;">See all</span>
-                    </span>
+                    </h3>
                     <div class="marquee-wrapper mb-3" style="padding: 0 !important;">
                         <div class="marquee">
                             <div class="marquee-group">
                                 <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a>
                                 <a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a><a href="#" class="marquee-tag-wrapper waves-effect waves-light">
                                     <div class="marquee-tag-container">
-                                        <span class="marquee-tag" style="font-size:inherit">Cooking</span>
+                                        <span class="marquee-tag" style="font-size:.9rem">Cooking</span>
                                     </div>
                                 </a>
 
@@ -161,8 +163,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="masonry">
+                        <div class="item" data-src="pp.png" id="featuredImageHolder1">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder1-canvas"></canvas>
+                            <img id="featuredImageHolder1-image">
+                        </div>
+                        <div class="item" data-src="pp2.jpg" id="featuredImageHolder2">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder2-canvas"></canvas>
+                            <img id="featuredImageHolder2-image">
+                        </div>
+                        <div class="item" data-src="pp3.jpg" id="featuredImageHolder3">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder3-canvas"></canvas>
+                            <img id="featuredImageHolder3-image">
+                        </div>
+                        <div class="item" data-src="pp4.jpg" id="featuredImageHolder4">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder4-canvas"></canvas>
+                            <img id="featuredImageHolder4-image">
+                        </div>
+                        <div class="item" data-src="pp5.jpg" id="featuredImageHolder5">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder5-canvas"></canvas>
+                            <img id="featuredImageHolder5-image">
+                        </div>
+                        <div class="item" data-src="pp6.jpg" id="featuredImageHolder6">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder6-canvas"></canvas>
+                            <img id="featuredImageHolder6-image">
+                        </div>
+                        <div class="item" data-src="pp7.jpg" id="featuredImageHolder7">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder7-canvas"></canvas>
+                            <img id="featuredImageHolder7-image">
+                        </div>
+                        <div class="item" data-src="profile.png" id="featuredImageHolder8">
+                            <canvas class="hiddenCanvas" id="featuredImageHolder8-canvas"></canvas>
+                            <img id="featuredImageHolder8-image">
+                        </div>
+
+                    </div>
                     <div style="width: 100%;height: 100%;padding: 0;margin: 0;display: flex;flex-wrap: wrap;">
-                        <div class="card" style="color:var(--text-color);overflow: hidden;width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
+                        <div class="card" style="color:var(--text-color);box-shadow: 5px 5px 10px var(--bg-color-2a);width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
                             <a class="card-image-overlay" href="./card-detail.html">
                                 <div id="indexPageHolder1" data-src="./a1.webp" class="item-img text-center" style="height: 13rem;position: relative;overflow: hidden;border-radius: .4rem .4rem 0 0;">
                                     <canvas id="indexPageHolder1-canvas" class="hiddenCanvas"></canvas>
@@ -212,7 +249,7 @@
                                 <i data-feather='heart'></i>
                             </a> -->
                         </div>
-                        <div class="card" style="color:var(--text-color);overflow: hidden;width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
+                        <div class="card" style="color:var(--text-color);box-shadow: 5px 5px 10px var(--bg-color-2a);width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
                             <a class="card-image-overlay" href="./card-detail.html">
                                 <div id="indexPageHolder2" data-src="./etsy/2.png" class="item-img text-center" style="height: 13rem;position: relative;overflow: hidden;border-radius: .4rem .4rem 0 0;">
                                     <canvas id="indexPageHolder2-canvas" class="hiddenCanvas"></canvas>
@@ -261,7 +298,7 @@
                                 <i data-feather='heart'></i>
                             </a> -->
                         </div>
-                        <div  class="card" style="color:var(--text-color);overflow: hidden;width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
+                        <div  class="card" style="color:var(--text-color);box-shadow: 5px 5px 10px var(--bg-color-2a);width: 46%;margin: auto;position: relative;border-radius: 1.52rem;margin-bottom: 2rem;">
                             <a class="card-image-overlay" href="./card-detail.html">
                                 <div id="indexPageHolder3" data-src="./etsy/1.png" class="item-img text-center" style="height: 13rem;position: relative;overflow: hidden;border-radius: .4rem .4rem 0 0;">
                                     <canvas id="indexPageHolder3-canvas" class="hiddenCanvas"></canvas>

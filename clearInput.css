@@ -1,14 +1,10 @@
 .input {
-    --background:   var(--bg-color-light);
-    --border-default: #D0D0DF;
-    --border-active: #3D6DF9;
-    --shadow-default: rgba(32, 32, 72, 0.12);
-    --shadow-active: rgba(61, 109, 249, 0.25);
-    --placeholder-color: var(--bg-color);
-    --placeholder-color-hover: var(--bg-color-9a);
-    --close: var(--text-color);
-    --close-light: var(--bg-color-3a);
-    --close-background: var(--bg-color-3a);
+    --background: var(--unspoken-card-bg);
+    --placeholder-color: var(--unspoken-app-text-dark);
+    --placeholder-color-hover: var(--unspoken-app-text-dark);
+    --close: var(--unspoken-app-text-dark);
+    --close-light: var(--unspoken-app-text-dark);
+    --close-background: var(--unspoken-app-text-dark);
     width: 100%;
     max-width: var(--body-width);
     display: flex;
@@ -35,6 +31,13 @@
     --clear-line-offset: 27px;
     --clear-long-array: 8.5px;
     --clear-long-offset: 24px;
+    background: var(--unspoken-app-search-bg);
+    border-radius: .75rem;
+    height: 4.1rem;
+    padding: 0px;
+    width: 95%;
+    margin: auto;
+    border: 1px solid var(--unspoken-app-search-border);
 }
 
 
@@ -46,6 +49,20 @@
 
 .input .text {
     flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    align-items: center;
+}
+
+.input .text svg {
+    width: 1.54rem;
+    height: 1.54rem;
+    margin-left: 1rem;
+}
+
+.input .text svg path {
+    fill: var(--unspoken-app-text-dark);
 }
 
 .input .text input {
@@ -56,14 +73,14 @@
     outline: none;
     display: block;
     width: 100%;
-    height: 4rem;
+    height: inherit;
     margin: 0;
-    padding: 12px 16px;
     font-family: inherit;
-    padding-left: 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--text-color);
+    color: var(--unspoken-app-text-dark);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    height: inherit;
+    font-weight: 300 !important;
 }
 
 .input .text input::-moz-placeholder {

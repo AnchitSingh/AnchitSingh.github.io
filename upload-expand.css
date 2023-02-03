@@ -1,0 +1,166 @@
+body {
+    background: gray;
+}
+
+/* #expand-button {
+    border: none;
+    background: #F4F4F8;
+    color: #4B4C4F;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+} */
+
+#square {
+    position: absolute;
+    right: calc(17.5% + 0.5rem);
+    top: 1.5rem;
+    width: 0rem;
+    z-index: 100;
+    height: 0rem;
+    transform: translate(50%, -25%);
+    background-color: rgba(255, 255, 255, 0.937);
+    transition: all .3s ease-in-out;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(240, 237, 237), -2px -2px 10px rgb(240, 237, 237);
+}
+
+#upload-area {
+    width: 83.33%;
+    height: 70.83%;
+    margin-top: 1rem;
+    background: #F5F5F5;
+    border-radius: 1.2rem;
+    text-align: center;
+    font-size: .5rem;
+    overflow: hidden;
+}
+
+#square #upload-button {
+    position: absolute;
+    width: 58.33%;
+    height: 25%;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none;
+    background: #0071FF;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 8.33%;
+    color: #fff;
+    font-weight: bold;
+}
+
+#square #close-button {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0.5rem;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    width: 1.5rem;
+    right: 0;
+    background: transparent;
+    top: 0;
+
+}
+
+#square #close-button svg {
+    fill: #4e4f4f;
+}
+
+#upload-area p {
+    color: #a6a6a7;
+}
+
+#upload-area svg {
+    width: 1rem;
+    margin-top: 1.5rem;
+    stroke: #4e4f4f
+}
+
+#upload-area h3 {
+    color: #4e4f4f;
+}
+
+#square-search {
+    position: absolute;
+    width: 0rem;
+    height: 0rem;
+    z-index: 100;
+    left: calc(27.5% + 0.5rem);
+    top: 1.5rem;
+    box-shadow: 2px 2px 10px rgb(240 237 237), -2px -2px 10px rgb(240 237 237);
+    transform: translate(-50%, -42%);
+    background: #fff;
+    transition: all .3s ease-in-out;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+
+}
+
+#search-area {
+    width: 86.66%;
+    height: 3rem;
+    margin-top: 1rem;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: .5rem;
+    overflow: hidden;
+}
+#search-area input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    color: #4e4f4f;
+}
+
+#square-search #close-button-fontsearch {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0.2rem;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    width: 1.5rem;
+    right: 0;
+    background: transparent;
+    top: 0;
+}
+
+#square-search #close-button-fontsearch svg {
+    fill: #4e4f4f;
+}
+
+.font-options:hover {
+    background: #b9b9bc5e;
+}
+
+.font-options {
+    width: 86.66%;
+    height: 2.3rem;
+    margin: 0.4rem 1rem;
+    font-size: 1.2rem;
+    padding: 1.32rem;
+    color: #4e4f4f;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}

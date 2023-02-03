@@ -51,6 +51,48 @@
     <link rel="stylesheet" href="clearInput.css">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        .top-editor-bar {
+            height: 100%;
+            width: 15%;
+            border-radius: 1.5rem;
+            display: flex;
+            transition: .6s;
+            margin: 0 .3rem;
+        }
+
+        .top-editor-bar:hover {
+            background: #fff;
+            box-shadow: 3px 3px 100px #b6babc;
+        }
+
+        .top-editor-bar:hover svg g {
+            stroke-width: 2;
+            fill: #1DA1F2;
+        }
+
+        .top-editor-bar:hover svg path {
+            stroke-width: 2;
+            stroke: #1DA1F2;
+        }
+
+        .top-editor-bar svg {
+            margin: auto;
+        }
+
+        .top-editor-bar svg g {
+            stroke-width: 1.2;
+            fill: #b1b6bf;
+        }
+
+        .top-editor-bar svg path {
+            stroke-width: 1.2;
+            stroke: #b1b6bf;
+        }
+    </style>
+    <link rel="stylesheet" href="editor-tabs.css">
+    <link rel="stylesheet" href="baloon.css">
+    <link rel="stylesheet" href="upload-expand.css">
 </head>
 
 <!-- END: Head-->
@@ -66,33 +108,257 @@
             <!-- topbar start -->
             <div style="position: absolute;z-index: 99999;width: 100%;display: flex;justify-content: space-between;background: transparent;">
                 <a href="./index.html" style="padding: var(--body-padding) 0 0 var(--body-padding);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <path d="M11 7.99996L7 12M7 12L11 16M7 12H17M10 22H14C16.8003 22 18.2004 22 19.27 21.455C20.2108 20.9757 20.9757 20.2108 21.455 19.27C22 18.2004 22 16.8003 22 14V10C22 7.19974 22 5.79961 21.455 4.73005C20.9757 3.78924 20.2108 3.02433 19.27 2.54497C18.2004 2 16.8003 2 14 2H10C7.19974 2 5.79961 2 4.73005 2.54497C3.78924 3.02433 3.02433 3.78924 2.54497 4.73005C2 5.79961 2 7.19974 2 10V14C2 16.8003 2 18.2004 2.54497 19.27C3.02433 20.2108 3.78924 20.9757 4.73005 21.455C5.79961 22 7.19974 22 10 22Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </a>
                 <a href="./card-cart.html" style="padding: var(--body-padding) var(--body-padding) 0  0;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.9999 9H7.99991M7.99991 6.08268V6C7.99991 3.79086 9.79077 2 11.9999 2C14.2091 2 15.9999 3.79086 15.9999 6V6.08268M7.99991 6.08268C8.78662 6 9.78914 6 11.1878 6H12.812C14.2107 6 15.2132 6 15.9999 6.08268M7.99991 6.08268C7.39786 6.14596 6.92219 6.25766 6.49207 6.45483C5.61778 6.85563 4.87763 7.50008 4.36037 8.31092C3.77337 9.23109 3.60354 10.4539 3.26388 12.8995C2.8277 16.0399 2.60962 17.6101 3.08915 18.8297C3.51012 19.9003 4.28741 20.793 5.28995 21.3573C6.43192 22 8.01722 22 11.1878 22H12.812C15.9826 22 17.5679 22 18.7099 21.3573C19.7124 20.793 20.4897 19.9003 20.9107 18.8297C21.3902 17.6101 21.1721 16.0399 20.7359 12.8995C20.3963 10.4539 20.2265 9.23109 19.6395 8.31092C19.1222 7.50008 18.382 6.85563 17.5078 6.45483C17.0776 6.25766 16.602 6.14596 15.9999 6.08268" stroke="var(--text-color)" stroke-width="1.3" stroke-linecap="round"></path>
                     </svg>
                 </a>
             </div>
             <!-- topbar end -->
             <div class="content-body">
-                <div style="width: 100%;height: 70vh;overflow: hidden;background: silver;display: flex;justify-content: center;">
-                    <div id="draggable-wrapper" style="width: 90%;background: rgb(26, 76, 26);margin: auto;position: relative;">
-                        <img id="imageId" src="./a1.webp" style="position: absolute;width: 100%;height: auto;" alt="">
-                        <div id="childDiv" style="background: transparent;z-index: 11;position: absolute;top: 4%;border: 2px solid #8F44FE;">
-                            <!-- 
-                            <input id="childInput" type="text" style="width: 100%;height: 100%;position: relative;border: none;outline: none;background: transparent;z-index: 99999;font-size: inherit;">
-                            <div style="width: .8rem;height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;left: -.4rem;top: -.4rem;z-index:99999"></div>
-                            <div style="width: .8rem;height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;right: -.4rem;top: -.4rem;z-index:99999"></div>
-                            <div style="width: .8rem;height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;left: -.4rem;bottom: -.4rem;z-index:99999"></div>
-                            <div style="width: .8rem;height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;right: -.4rem;bottom: -.5rem;z-index:99999"></div> -->
+                <div style="width: 100%;height: 60vh;overflow: hidden;display: flex;justify-content: center;">
+                    <div id="draggable-wrapper" style="width: 90%;margin: auto;position: relative;margin-bottom: 100%;">
+                        <img id="imageId" src="./a1.webp" style="position: absolute;width: 100%;height: auto;box-shadow: 2px 2px 10px #d9d9d9, -2px -2px 10px #d9d9d9;" alt="">
+                        <div id="childDiv" style="background: transparent;z-index: 11;position: absolute;top: 4%;">
 
+                            <input id="childInput" type="text" style="width: 100%;height: 100%;position: relative;border: 2px solid #8F44FE;outline: none;background: transparent;z-index: 99999;font-size: inherit;">
+                            <div id="topLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
+                            <div id="bottomLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
+                            <div id="topRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
+                            <div id="bottomRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
+                            <div id="bottomDragger" style="cursor: move;font-size: .5rem;max-width: 1.5rem;max-height: 1.2rem;border-radius: .5rem;background: #fff;position: absolute;left: 50%;transform: translate(-50%);bottom: -50%;box-shadow: 1px 1px 3px gray;display: flex;">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="margin: auto;fill:#4e4e4e" id="arrow-circle-down" viewBox="0 0 24 24" width="12" height="12">
+                                    <path d="M23.351,10.253c-.233-.263-.462-.513-.619-.67L20.487,7.3a1,1,0,0,0-1.426,1.4l2.251,2.29L21.32,11H13V2.745l2.233,2.194a1,1,0,0,0,1.4-1.426l-2.279-2.24c-.163-.163-.413-.391-.674-.623A2.575,2.575,0,0,0,12.028.006.28.28,0,0,0,12,0l-.011,0a2.584,2.584,0,0,0-1.736.647c-.263.233-.513.462-.67.619L7.3,3.513A1,1,0,1,0,8.7,4.939l2.29-2.251L11,2.68V11H2.68l.015-.015L4.939,8.7A1,1,0,1,0,3.513,7.3L1.274,9.577c-.163.163-.392.413-.624.675A2.581,2.581,0,0,0,0,11.989L0,12c0,.01.005.019.006.029A2.573,2.573,0,0,0,.65,13.682c.233.262.461.512.618.67l2.245,2.284a1,1,0,0,0,1.426-1.4L2.744,13H11v8.32l-.015-.014L8.7,19.062a1,1,0,1,0-1.4,1.425l2.278,2.239c.163.163.413.391.675.624a2.587,2.587,0,0,0,3.43,0c.262-.233.511-.46.669-.619l2.284-2.244a1,1,0,1,0-1.4-1.425L13,21.256V13h8.256l-2.2,2.233a1,1,0,1,0,1.426,1.4l2.239-2.279c.163-.163.391-.413.624-.675A2.589,2.589,0,0,0,23.351,10.253Z" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="textDiv" style="width: 10rem;height:5rem;border: 1px solid;"></div>
+                <div style="width: 100%;height: 40vh;background: #fff;box-shadow: 3px 3px 10px #b1b6bf;position: absolute;bottom: 0;border-radius: 2rem 2rem 0 0;padding: 2rem;">
+                    <nav class="amazing-tabs">
+                        <div class="main-tabs-container">
+                            <div class="main-tabs-wrapper">
+                                <ul class="main-tabs">
+                                    <li>
+                                        <button class="round-button fontSize" data-translate-value="0" data-color="gray">
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="cursor:move;width: 2rem;height: 2rem;" width="512" height="512" viewBox="0 0 5120 5120">
+                                                <g id="l2C4oWfPqU7dZto3r0aS0G3" fill="#4e4f4f" style="transform:none;">
+                                                    <g style="transform:none">
+                                                        <path id="pgkTk7XEJ" d="M3205 3824 c-275 -29 -478 -188 -535 -419 -17 -72 -15 -229 5 -306 49 -190 196 -327 415 -389 198 -55 487 -45 714 25 l49 15 -5 -78 c-12 -202 -149 -302 -411 -302 -108 0 -202 13 -309 40 -131 34 -201 23 -264 -38 -88 -87 -82 -217 13 -303 61 -55 224 -103 436 -130 122 -15 375 -7 473 15 266 58 434 199 515 433 43 123 49 219 49 738 l0 490 -24 51 c-27 58 -94 120 -145 134 -140 39 -292 -34 -322 -155 -6 -25 -14 -45 -16 -45 -3 0 -33 25 -66 56 -71 64 -191 126 -287 148 -69 17 -218 27 -285 20z m435 -383 c87 -36 151 -89 185 -157 27 -53 30 -69 30 -149 l0 -90 -85 -28 c-150 -51 -370 -48 -475 5 -94 47 -138 117 -138 220 0 107 49 173 162 215 58 21 251 12 321 -16z"></path>
+                                                        <path id="pC0qBYqsQ" d="M145 3791 c-84 -39 -135 -120 -135 -216 0 -62 -38 26 534 -1263 210 -474 369 -820 387 -843 37 -47 99 -91 154 -109 57 -19 180 -17 242 4 60 20 134 81 167 139 20 35 846 1894 886 1995 17 45 8 142 -19 185 -52 84 -122 126 -210 127 -73 0 -124 -17 -171 -58 -49 -41 -62 -65 -166 -307 l-83 -190 -537 0 -538 0 -54 125 c-149 348 -161 369 -247 409 -58 27 -154 28 -210 2z m1385 -1008 c0 -20 -334 -802 -340 -796 -4 5 -76 172 -160 373 -84 201 -159 380 -167 398 l-13 32 340 0 c187 0 340 -3 340 -7z"></path>
+                                                    </g>
+                                                </g>
+                                                <g style="transform:none;">
+                                                    <g style="transform:none">
+                                                        <path id="pRcMkiLx8" d="M4400 4055 l0 -75 140 0 140 0 0 -1420 0 -1420 -140 0 -140 0 0 -75 0 -75 360 0 360 0 0 75 0 75 -140 0 -140 0 0 1420 0 1420 140 0 140 0 0 75 0 75 -360 0 -360 0 0 -75z"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="round-button gallery active" style="--round-button-active-color: #2962ff" data-translate-value="100%" data-color="gray">
+
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 4.5H21" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.26001 9.5H16.74" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3 14.5H21" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.26001 19.5H16.74" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="round-button" style="--round-button-active-color: #00c853" data-translate-value="200%" data-color="gray">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.87988 4.5C4.87988 3.4 5.77988 2.5 6.87988 2.5H11.9999C14.6199 2.5 16.7499 4.63 16.7499 7.25C16.7499 9.87 14.6199 12 11.9999 12H4.87988V4.5Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M4.87988 12H14.3799C16.9999 12 19.1299 14.13 19.1299 16.75C19.1299 19.37 16.9999 21.5 14.3799 21.5H6.87988C5.77988 21.5 4.87988 20.6 4.87988 19.5V12V12Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="round-button font" style="--round-button-active-color: #aa00ff" data-translate-value="300%" data-color="gray">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 16H5.43C3.14 16 2 14.86 2 12.57V5.43C2 3.14 3.14 2 5.43 2H10C12.29 2 13.43 3.14 13.43 5.43" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M18.57 22H14C11.71 22 10.57 20.86 10.57 18.57V11.43C10.57 9.14 11.71 8 14 8H18.57C20.86 8 22 9.14 22 11.43V18.57C22 20.86 20.86 22 18.57 22Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14.87 15H18.13" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M16.5 16.6301V13.3701" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="round-button" style="--round-button-active-color: #ff6d00" data-translate-value="400%" data-color="gray">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76 19.5199C9.34 19.2899 8.66 19.2899 8.24 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.4 5.87988 5.11 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.59009 13.4101L10.4101 10.5901" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4101 13.4101L7.59009 10.5901" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.4 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="main-slider" aria-hidden="true">
+                                    <div class="main-slider-circle">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters-container">
+                            <div class="filters-wrapper">
+                                <ul class="filter-tabs">
+                                    <li>
+                                        <button class="filter-button filter-active" data-translate-value="0">
+                                            <svg style="z-index: -1;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z" fill="#4e4f4f" />
+                                                <path d="M12.47 10.25H3C2.59 10.25 2.25 9.91 2.25 9.5C2.25 9.09 2.59 8.75 3 8.75H12.47C12.88 8.75 13.22 9.09 13.22 9.5C13.22 9.91 12.89 10.25 12.47 10.25Z" fill="#4e4f4f" />
+                                                <path d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z" fill="#4e4f4f" />
+                                                <path d="M12.47 20.25H3C2.59 20.25 2.25 19.91 2.25 19.5C2.25 19.09 2.59 18.75 3 18.75H12.47C12.88 18.75 13.22 19.09 13.22 19.5C13.22 19.91 12.89 20.25 12.47 20.25Z" fill="#4e4f4f" />
+                                            </svg>
+
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="filter-button" data-translate-value="100%">
+                                            <svg style="z-index: -1;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z" fill="#4e4f4f" />
+                                                <path d="M16.7417 10.25H7.26172C6.85172 10.25 6.51172 9.91 6.51172 9.5C6.51172 9.09 6.85172 8.75 7.26172 8.75H16.7317C17.1417 8.75 17.4817 9.09 17.4817 9.5C17.4817 9.91 17.1517 10.25 16.7417 10.25Z" fill="#4e4f4f" />
+                                                <path d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z" fill="#4e4f4f" />
+                                                <path d="M16.7417 20.25H7.26172C6.85172 20.25 6.51172 19.91 6.51172 19.5C6.51172 19.09 6.85172 18.75 7.26172 18.75H16.7317C17.1417 18.75 17.4817 19.09 17.4817 19.5C17.4817 19.91 17.1517 20.25 16.7417 20.25Z" fill="#4e4f4f" />
+                                            </svg>
+
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="filter-button" data-translate-value="200%">
+                                            <svg style="z-index: -1;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z" fill="#4e4f4f" />
+                                                <path d="M21.0013 10.25H11.5312C11.1213 10.25 10.7812 9.91 10.7812 9.5C10.7812 9.09 11.1213 8.75 11.5312 8.75H21.0013C21.4113 8.75 21.7513 9.09 21.7513 9.5C21.7513 9.91 21.4113 10.25 21.0013 10.25Z" fill="#4e4f4f" />
+                                                <path d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z" fill="#4e4f4f" />
+                                                <path d="M21.0013 20.25H11.5312C11.1213 20.25 10.7812 19.91 10.7812 19.5C10.7812 19.09 11.1213 18.75 11.5312 18.75H21.0013C21.4113 18.75 21.7513 19.09 21.7513 19.5C21.7513 19.91 21.4113 20.25 21.0013 20.25Z" fill="#4e4f4f" />
+                                            </svg>
+
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="filter-slider" aria-hidden="true">
+                                    <div class="filter-slider-rect">&nbsp;</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="filters-fsize-container">
+                            <div id="slider"></div>
+                        </div>
+                        <div class="filters-font-container">
+                            <div class="filters-font-wrapper">
+                                <ul class="filter-font-tabs">
+                                    <li>
+                                        <button id="expand-button-fontsearch" class="filter-font-button filter-active" data-translate-value="0">
+                                            Fonts
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button id="expand-button" class="filter-font-button" data-translate-value="100%">
+                                            Upload
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="filter-font-slider" aria-hidden="true">
+                                    <div class="filter-font-slider-rect">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div id="square">
+                                <div id="upload-area">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 17V11L7 13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9 11L11 13" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M22 10V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H14" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M22 10H18C15 10 14 9 14 6V2L22 10Z" stroke="#4e4f4f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <h3>Upload File</h3>
+                                    <p>Upload your custom <br> font file here.</p>
+                                </div>
+                                <button id="close-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" />
+                                        <path d="M9.16937 15.5794C8.97937 15.5794 8.78938 15.5094 8.63938 15.3594C8.34938 15.0694 8.34938 14.5894 8.63938 14.2994L14.2994 8.63938C14.5894 8.34938 15.0694 8.34938 15.3594 8.63938C15.6494 8.92937 15.6494 9.40937 15.3594 9.69937L9.69937 15.3594C9.55937 15.5094 9.35937 15.5794 9.16937 15.5794Z" />
+                                        <path d="M14.8294 15.5794C14.6394 15.5794 14.4494 15.5094 14.2994 15.3594L8.63938 9.69937C8.34938 9.40937 8.34938 8.92937 8.63938 8.63938C8.92937 8.34938 9.40937 8.34938 9.69937 8.63938L15.3594 14.2994C15.6494 14.5894 15.6494 15.0694 15.3594 15.3594C15.2094 15.5094 15.0194 15.5794 14.8294 15.5794Z" />
+                                    </svg>
+
+                                </button>
+                                <button id="upload-button">Upload</button>
+                            </div>
+                            <div id="square-search">
+                                <div id="search-area" style="margin: 1rem auto;display: flex;flex-direction: row;">
+                                    <svg style="margin: 0.75rem 0 0 1rem;width: 1.5rem;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5304 17.4698C19.2375 17.1769 18.7626 17.1769 18.4697 17.4698C18.1768 17.7626 18.1768 18.2375 18.4697 18.5304L19.5304 17.4698ZM22.4696 22.5304C22.7625 22.8233 23.2374 22.8233 23.5303 22.5304C23.8232 22.2375 23.8232 21.7626 23.5303 21.4697L22.4696 22.5304ZM9.33512 4.80232C9.74423 4.73752 10.0234 4.35334 9.95856 3.94423C9.89376 3.53511 9.50958 3.25599 9.10047 3.32079L9.33512 4.80232ZM4.32076 8.1005C4.25596 8.50961 4.53508 8.89379 4.9442 8.95859C5.35331 9.02339 5.73749 8.74426 5.80229 8.33515L4.32076 8.1005ZM18.4697 18.5304L22.4696 22.5304L23.5303 21.4697L19.5304 17.4698L18.4697 18.5304ZM11 18.25C6.44365 18.25 2.75 14.5563 2.75 10H1.25C1.25 15.3848 5.61522 19.75 11 19.75V18.25ZM19.25 10C19.25 14.5563 15.5563 18.25 11 18.25V19.75C16.3848 19.75 20.75 15.3848 20.75 10H19.25ZM11 1.75C15.5563 1.75 19.25 5.44365 19.25 10H20.75C20.75 4.61522 16.3848 0.25 11 0.25V1.75ZM11 0.25C5.61522 0.25 1.25 4.61522 1.25 10H2.75C2.75 5.44365 6.44365 1.75 11 1.75V0.25ZM9.10047 3.32079C6.64008 3.71047 4.71044 5.64012 4.32076 8.1005L5.80229 8.33515C6.09032 6.51661 7.51658 5.09035 9.33512 4.80232L9.10047 3.32079Z" style="fill: #4e4f4f;"></path>
+                                    </svg>
+                                    <input type="text">
+                                </div>
+                                <div style="width: 80%;height: 1px;background: #F5F5F5;margin: 0 auto;"></div>
+                                <div class="option-wrapper" style="width: 100%;height: 100%;overflow: auto;overflow-x: hidden;padding: 0;margin: 0;">
+                                    <div class="font-options">
+                                        Font 1
+                                    </div>
+                                    <div class="font-options">
+                                        Font 2
+                                    </div>
+                                    <div class="font-options">
+                                        Font 3
+                                    </div>
+                                    <div class="font-options">
+                                        Font 4
+                                    </div>
+                                    <div class="font-options">
+                                        Font 1
+                                    </div>
+                                    <div class="font-options">
+                                        Font 2
+                                    </div>
+                                    <div class="font-options">
+                                        Font 3
+                                    </div>
+                                    <div class="font-options">
+                                        Font 4
+                                    </div>
+                                    <div class="font-options">
+                                        Font 1
+                                    </div>
+                                    <div class="font-options">
+                                        Font 2
+                                    </div>
+                                    <div class="font-options">
+                                        Font 3
+                                    </div>
+                                    <div class="font-options">
+                                        Font 4
+                                    </div>
+                                </div>
+                                <button id="close-button-fontsearch">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" />
+                                        <path d="M9.16937 15.5794C8.97937 15.5794 8.78938 15.5094 8.63938 15.3594C8.34938 15.0694 8.34938 14.5894 8.63938 14.2994L14.2994 8.63938C14.5894 8.34938 15.0694 8.34938 15.3594 8.63938C15.6494 8.92937 15.6494 9.40937 15.3594 9.69937L9.69937 15.3594C9.55937 15.5094 9.35937 15.5794 9.16937 15.5794Z" />
+                                        <path d="M14.8294 15.5794C14.6394 15.5794 14.4494 15.5094 14.2994 15.3594L8.63938 9.69937C8.34938 9.40937 8.34938 8.92937 8.63938 8.63938C8.92937 8.34938 9.40937 8.34938 9.69937 8.63938L15.3594 14.2994C15.6494 14.5894 15.6494 15.0694 15.3594 15.3594C15.2094 15.5094 15.0194 15.5794 14.8294 15.5794Z" />
+                                    </svg>
+
+                                </button>
+
+
+                            </div>
+
+                        </div>
+                    </nav>
+                    <hr>
+                    <div style="display: flex;flex-direction: row;justify-content:end;">
+                        <button style="border: none;width: 60%;height: 3rem;border-radius: 1.5rem;background: #307EF3;color: #fff;font-size: 1.1rem;"> 
+                           Set up Pricing
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -137,175 +403,6 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script>
-        const {
-            to,
-            set,
-            timeline
-        } = gsap
-
-        function delay(fn, ms) {
-            let timer = 0
-            return function(...args) {
-                clearTimeout(timer)
-                timer = setTimeout(fn.bind(this, ...args), ms || 0)
-            }
-        }
-
-        document.querySelectorAll('.input').forEach(elem => {
-            let clear = elem.querySelector('.clear'),
-                input = elem.querySelector('input'),
-                {
-                    classList
-                } = elem,
-                svgLine = clear.querySelector('.line'),
-                svgLineProxy = new Proxy({
-                    x: null
-                }, {
-                    set(target, key, value) {
-                        target[key] = value
-                        if (target.x !== null) {
-                            svgLine.setAttribute('d', getPath(target.x, .1925))
-                        }
-                        return true
-                    },
-                    get(target, key) {
-                        return target[key]
-                    }
-                })
-
-            svgLineProxy.x = 0
-
-            input.addEventListener('input', delay(e => {
-                let bool = input.value.length
-                to(elem, {
-                    '--clear-scale': bool ? 1 : 0,
-                    duration: bool ? .5 : .15,
-                    ease: bool ? 'elastic.out(1, .7)' : 'none'
-                })
-                to(elem, {
-                    '--clear-opacity': bool ? 1 : 0,
-                    duration: .15
-                })
-            }, 250))
-
-            clear.addEventListener('click', e => {
-                classList.add('clearing')
-                set(elem, {
-                    '--clear-swipe-left': (input.offsetWidth - 16) * -1 + 'px'
-                })
-                to(elem, {
-                    keyframes: [{
-                        '--clear-rotate': '45deg',
-                        duration: .25
-                    }, {
-                        '--clear-arrow-x': '2px',
-                        '--clear-arrow-y': '-2px',
-                        duration: .15
-                    }, {
-                        '--clear-arrow-x': '-3px',
-                        '--clear-arrow-y': '3px',
-                        '--clear-swipe': '-3px',
-                        duration: .15,
-                        onStart() {
-                            to(svgLineProxy, {
-                                x: 3,
-                                duration: .1,
-                                delay: .05
-                            })
-                        }
-                    }, {
-                        '--clear-swipe-x': 1,
-                        '--clear-x': (input.offsetWidth) * -1 + 'px',
-                        duration: .45,
-                        onComplete() {
-                            input.value = ''
-                            input.focus()
-                            to(elem, {
-                                '--clear-arrow-offset': '4px',
-                                '--clear-arrow-offset-second': '4px',
-                                '--clear-line-array': '8.5px',
-                                '--clear-line-offset': '27px',
-                                '--clear-long-offset': '24px',
-                                '--clear-rotate': '0deg',
-                                '--clear-arrow-o': 1,
-                                duration: 0,
-                                delay: .7,
-                                onStart() {
-                                    classList.remove('clearing')
-                                }
-                            })
-                            to(elem, {
-                                '--clear-opacity': 0,
-                                duration: .2,
-                                delay: .55
-                            })
-                            to(elem, {
-                                '--clear-arrow-o': 0,
-                                '--clear-arrow-x': '0px',
-                                '--clear-arrow-y': '0px',
-                                '--clear-swipe': '0px',
-                                duration: .15
-                            })
-                            to(svgLineProxy, {
-                                x: 0,
-                                duration: .45,
-                                ease: 'elastic.out(1, .75)'
-                            })
-                        }
-                    }, {
-                        '--clear-swipe-x': 0,
-                        '--clear-x': '0px',
-                        duration: .4,
-                        delay: .35
-                    }]
-                })
-                to(elem, {
-                    '--clear-arrow-offset': '0px',
-                    '--clear-arrow-offset-second': '8px',
-                    '--clear-line-array': '28.5px',
-                    '--clear-line-offset': '57px',
-                    '--clear-long-offset': '17px',
-                    duration: .2
-                })
-            })
-        })
-
-        function getPoint(point, i, a, smoothing) {
-            let cp = (current, previous, next, reverse) => {
-                    let p = previous || current,
-                        n = next || current,
-                        o = {
-                            length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
-                            angle: Math.atan2(n[1] - p[1], n[0] - p[0])
-                        },
-                        angle = o.angle + (reverse ? Math.PI : 0),
-                        length = o.length * smoothing;
-                    return [current[0] + Math.cos(angle) * length, current[1] + Math.sin(angle) * length];
-                },
-                cps = cp(a[i - 1], a[i - 2], point, false),
-                cpe = cp(point, a[i - 1], a[i + 1], true);
-            return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
-        }
-
-        function getPath(x, smoothing) {
-            return [
-                [2, 2],
-                [12 - x, 12 + x],
-                [22, 22]
-            ].reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '')
-        }
-    </script>
-    <script src="./smartcrop.js"></script>
-    <script src="./smartCropImage.js"></script>
-    <script>
-        smartCropping('cartImageHolder1')
-        smartCropping('cartImageHolder2')
-        smartCropping('cartImageHolder3')
-        smartCropping('cartImageHolder4')
-        smartCropping('cartImageHolder5')
-    </script>
-
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="./jquery.ui.touch-punch.js"></script>
     <script>
@@ -359,15 +456,42 @@
         let fontSizePercent = 8
         let topPercent = 10
         let leftPercent = 10
-        let currentHeight = $('#imageId').height();
-        let currentWidth = $('#draggable-wrapper').width();
-        $("#childDiv").height((currentHeight * heightPercent) / 100);
-        $("#childDiv").width((currentWidth * widthPercent) / 100);
-        $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
-        $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
-        $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
 
+        function updateDimentions() {
+            let currentHeight = $('#imageId').height();
+            let currentWidth = $('#draggable-wrapper').width();
 
+            $("#childDiv").height((currentHeight * heightPercent) / 100);
+            $("#childDiv").width((currentWidth * widthPercent) / 100);
+            $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
+            $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
+            $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
+
+            $('#topLeftPointer').width($('#childDiv').width() * .1 + 'px')
+            $('#bottomLeftPointer').width($('#childDiv').width() * .1 + 'px')
+            $('#topRightPointer').width($('#childDiv').width() * .1 + 'px')
+            $('#bottomRightPointer').width($('#childDiv').width() * .1 + 'px')
+            $('#bottomDragger').width($('#childDiv').width() * .1 + 'px')
+
+            $('#topLeftPointer').height($('#childDiv').width() * .1 + 'px')
+            $('#bottomLeftPointer').height($('#childDiv').width() * .1 + 'px')
+            $('#topRightPointer').height($('#childDiv').width() * .1 + 'px')
+            $('#bottomRightPointer').height($('#childDiv').width() * .1 + 'px')
+            $('#bottomDragger').height($('#childDiv').width() * .1 + 'px')
+
+            $('#topLeftPointer').css('left', -1 * $('#topLeftPointer').width() * .5 + 'px')
+            $('#bottomLeftPointer').css('left', -1 * $('#bottomLeftPointer').width() * .5 + 'px')
+            $('#topRightPointer').css('right', -1 * $('#topRightPointer').width() * .5 + 'px')
+            $('#bottomRightPointer').css('right', -1 * $('#bottomRightPointer').width() * .5 + 'px')
+
+            $('#topLeftPointer').css('top', -1 * $('#topLeftPointer').width() * .5 + 'px')
+            $('#bottomLeftPointer').css('bottom', -1 * $('#bottomLeftPointer').width() * .5 + 'px')
+            $('#topRightPointer').css('top', -1 * $('#topRightPointer').width() * .5 + 'px')
+            $('#bottomRightPointer').css('bottom', -1 * $('#bottomRightPointer').width() * .5 + 'px')
+            $('#bottomDragger').css('bottom', -1 * $('#childDiv').width() * .1 + 'px')
+
+        }
+        updateDimentions()
         var element = document.getElementById("draggable-wrapper");
         let previousWidth;
         let previousHeight;
@@ -381,13 +505,14 @@
                 previousWidth = currentWidth;
                 previousHeight = currentHeight;
             });
-            let currentHeight = $('#imageId').height();
-            let currentWidth = $('#draggable-wrapper').width();
-            $("#childDiv").height((currentHeight * heightPercent) / 100);
-            $("#childDiv").width((currentWidth * widthPercent) / 100);
-            $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
-            $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
-            $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
+            updateDimentions()
+            // let currentHeight = $('#imageId').height();
+            // let currentWidth = $('#draggable-wrapper').width();
+            // $("#childDiv").height((currentHeight * heightPercent) / 100);
+            // $("#childDiv").width((currentWidth * widthPercent) / 100);
+            // $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
+            // $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
+            // $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
         });
         observer.observe(element, {
             attributes: true,
@@ -412,7 +537,7 @@
             }
         }).resizable({
             containment: $("#imageId"),
-            handles: "n, e, s, w, ne, se, sw, nw",
+            handles: "n, e, s, w, ne, nw, se, sw",
             resize: function(e, ui) {
                 updateWHTL()
             },
@@ -421,6 +546,248 @@
             }
         })
         $('.ui-icon').remove()
+    </script>
+    <script>
+        // resources in description
+        const mainTabs = document.querySelector(".main-tabs");
+        const mainSliderCircle = document.querySelector(".main-slider-circle");
+        const roundButtons = document.querySelectorAll(".round-button");
+
+        const colors = {
+            gray: {
+                50: {
+                    value: "#b9b9bc5e"
+                },
+                100: {
+                    value: "#b9b9bc5e"
+                }
+            }
+        };
+
+        const getColor = (color, variant) => {
+            return colors[color][variant].value;
+        };
+
+        const handleActiveTab = (tabs, event, className) => {
+            tabs.forEach((tab) => {
+                tab.classList.remove(className);
+            });
+
+            if (!event.target.classList.contains(className)) {
+                event.target.classList.add(className);
+            }
+        };
+
+        mainTabs.addEventListener("click", (event) => {
+            const root = document.documentElement;
+            const targetColor = event.target.dataset.color;
+            const targetTranslateValue = event.target.dataset.translateValue;
+
+            if (event.target.classList.contains("round-button")) {
+                mainSliderCircle.classList.remove("animate-jello");
+                void mainSliderCircle.offsetWidth;
+                mainSliderCircle.classList.add("animate-jello");
+
+                root.style.setProperty("--translate-main-slider", targetTranslateValue);
+                root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
+                root.style.setProperty("--background-color", getColor(targetColor, 100));
+
+                handleActiveTab(roundButtons, event, "active");
+
+                if (!event.target.classList.contains("gallery")) {
+                    root.style.setProperty("--filters-container-height", "0");
+                    root.style.setProperty("--filters-wrapper-opacity", "0");
+                } else {
+                    root.style.setProperty("--filters-container-height", "3.5rem");
+                    root.style.setProperty("--filters-wrapper-opacity", "1");
+                }
+                if (!event.target.classList.contains("fontSize")) {
+                    root.style.setProperty("--filters-fsize-container-height", "0");
+                    root.style.setProperty("--filters-fsize-display", "none");
+                } else {
+                    root.style.setProperty("--filters-fsize-container-height", "3.5rem");
+                    root.style.setProperty("--filters-fsize-display", "flex");
+                }
+                if (!event.target.classList.contains("font")) {
+                    root.style.setProperty("--filters-font-container-height", "0");
+                    root.style.setProperty("--filters-font-wrapper-opacity", "0");
+                    $('#close-button-fontsearch').click()
+                    $('#close-button').click()
+                } else {
+                    root.style.setProperty("--filters-font-container-height", "3.5rem");
+                    root.style.setProperty("--filters-font-wrapper-opacity", "1");
+                }
+                //     root.style.setProperty("--filters-font-container-height", "0");
+                //     root.style.setProperty("--filters-font-display", "none");
+                //     root.style.setProperty("--filters-font-wrapper-opacity", "1");
+                // } else {
+                //     root.style.setProperty("--filters-font-container-height", "3.5rem");
+                //     root.style.setProperty("--filters-font-display", "flex");
+                //     root.style.setProperty("--filters-font-wrapper-opacity", "0");
+                // }
+            }
+        });
+
+        let filterTabs = document.querySelector(".filter-tabs");
+        let filterButtons = document.querySelectorAll(".filter-button");
+        let filterFontTabs = document.querySelector(".filter-font-tabs");
+        let filterFontButtons = document.querySelectorAll(".filter-font-button");
+
+
+        filterTabs.addEventListener("click", (event) => {
+            let root = document.documentElement;
+            let targetTranslateValue = event.target.dataset.translateValue;
+
+            if (event.target.classList.contains("filter-button")) {
+                root.style.setProperty("--translate-filters-slider", targetTranslateValue);
+                handleActiveTab(filterButtons, event, "filter-active");
+            }
+        });
+
+        filterFontTabs.addEventListener("click", (event) => {
+            let root = document.documentElement;
+            let targetTranslateValue = event.target.dataset.translateValue;
+
+            if (event.target.classList.contains("filter-font-button")) {
+                root.style.setProperty("--translate-filters-font-slider", targetTranslateValue);
+                handleActiveTab(filterFontButtons, event, "filter-font-active");
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script>
+        let slider = document.getElementById('slider'),
+            balloon,
+            balloonTransform,
+            balloonReset;
+
+        noUiSlider.create(slider, {
+            start: 60,
+            connect: 'lower',
+            range: {
+                min: 0,
+                max: 100
+            }
+        });
+
+        if (!balloon) {
+
+            let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttribute('viewBox', '0 0 8 6');
+            let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', 'M3.19770784,0.400189793 L0.183732919,4.48916968 C-0.132777702,4.91857125 -0.0301446804,5.51531196 0.41297019,5.82202737 C0.58019429,5.93777661 0.780561067,6 0.986063367,6 L7.01401322,6 C7.55855868,6 8,5.57222019 8,5.04452705 C8,4.84538453 7.93578945,4.65121861 7.81634366,4.48916968 L4.80236874,0.400189793 C4.48585812,-0.0292117777 3.87005999,-0.128668564 3.42694512,0.178046844 C3.33840792,0.239330552 3.2609487,0.314392601 3.19770784,0.400189793 Z');
+            svg.appendChild(path);
+
+            let inner = document.createElement('div');
+
+            inner.appendChild(svg);
+
+            balloon = document.createElement('div');
+            balloon.classList.add('balloon');
+            balloon.appendChild(inner);
+
+            slider.getElementsByClassName('noUi-base')[0].appendChild(balloon);
+
+            balloonTransform = new Proxy({
+                r: 0
+            }, {
+                set(target, key, value) {
+                    target[key] = value;
+                    balloon.style.setProperty('--r', target.r + 'deg');
+                    return true;
+                },
+                get(target, key) {
+                    return target[key];
+                }
+            });
+
+        }
+
+        var timestamp = null,
+            lastX = null,
+            startedMoving = false,
+            moved = false;
+
+        slider.noUiSlider.on('start', function() {
+            let percent = this.get() / this.options.range.max * 100;
+            balloon.classList.add('active');
+            balloon.childNodes[0].dataset.value = Math.round(this.get());
+            TweenMax.to(balloon, 0, {
+                x: this.target.offsetWidth * percent / 100,
+                scale: .75 + .25 * percent / 100
+            });
+            balloonReset = setInterval(() => {
+                if (!moved && startedMoving) {
+                    TweenMax.to(slider.getElementsByClassName('noUi-handle')[0], .3, {
+                        css: {
+                            scale: 1
+                        }
+                    });
+                    balloonTransform.r = 0;
+                    startedMoving = false;
+                }
+                moved = false;
+            }, 20);
+        });
+
+        slider.noUiSlider.on('slide', function() {
+            let percent = this.get() / this.options.range.max * 100;
+            balloon.childNodes[0].dataset.value = Math.round(this.get());
+            if (timestamp === null) {
+                timestamp = Date.now();
+                lastX = this.get();
+                return;
+            }
+            var now = Date.now(),
+                speedX = Math.round((this.get() - lastX) / (now - timestamp) * 160),
+                speedX = speedX > 10 ? 10 : speedX < -10 ? -10 : speedX;
+
+            balloonTransform.r = speedX * -2;
+
+            startedMoving = true;
+            moved = true;
+
+            TweenMax.to(balloon, 1.4, {
+                x: this.target.offsetWidth * percent / 100,
+                scale: .75 + .25 * percent / 100,
+                ease: Elastic.easeOut.config(1, .6)
+            });
+
+            TweenMax.to(slider.getElementsByClassName('noUi-handle')[0], .3, {
+                css: {
+                    scale: .9
+                }
+            });
+
+            timestamp = now;
+            lastX = this.get();
+        });
+
+        slider.noUiSlider.on('end', function() {
+            balloon.classList.remove('active');
+            clearInterval(balloonReset);
+        });
+    </script>
+    <script>
+        $("#expand-button").click(function() {
+            $("#square").css("width", "12rem");
+            $("#square").css("height", "12rem");
+            $('#close-button-fontsearch').click()
+        });
+        $('#close-button').click(function() {
+            $("#square").css("width", "0rem");
+            $("#square").css("height", "0rem");
+        });
+        $("#expand-button-fontsearch").click(function() {
+            $("#square-search").css("width", "15rem");
+            $("#square-search").css("height", "18rem");
+            $('#close-button').click()
+        });
+        $('#close-button-fontsearch').click(function() {
+            $("#square-search").css("width", "0rem");
+            $("#square-search").css("height", "0rem");
+        });
     </script>
 </body>
 <!-- END: Body-->

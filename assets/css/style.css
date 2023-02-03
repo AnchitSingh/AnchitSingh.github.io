@@ -20,40 +20,55 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 
 @font-face {
-	font-family: Barlow;
-	src: url(Barlow-Regular_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowSemiBold;
-	src: url(Barlow-SemiBold_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowBlack;
-	src: url(Barlow-Black_2);
-	font-display: swap;
-}
-
-@font-face {
-	font-family: BarlowBold;
-	src: url(Barlow-Bold_2);
-	/* font-display: swap; */
-}
-
-@font-face {
-	font-family: BarlowMedium;
-	src: url(Barlow-Medium_2);
-	font-display: swap;
-}
-
-@font-face {
 	font-family: SFPro;
-	src: url(SF-Pro-Display-Regular.otf);
+	src: url(../SFFonts/SF-Pro-Rounded-Regular.otf);
 	font-display: swap;
 }
+
+@font-face {
+	font-family: SFProLight;
+	src: url(../SFFonts/SF-Pro-Rounded-Light.otf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: SFProMedium;
+	src: url(../SFFonts/SF-Pro-Rounded-Medium.otf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: SFProSemiBold;
+	src: url(../SFFonts/SF-Pro-Rounded-Semibold.otf);
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: SFProBold;
+	src: url(../SFFonts/SF-Pro-Rounded-Bold.otf);
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: lulu;
+	src: url(lulu.woff2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Nectarine;
+	src: url(Nectarine.woff2);
+	font-display: swap;
+}
+
+
+/* @font-face {
+	font-family: Nectarine;
+	src: url(Brilliant.woff2);
+	font-display: swap;
+} */
 
 
 
@@ -91,31 +106,35 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--body-width: 30rem;
 	--body-font: SFPro;
 	--body-padding: 1.2rem;
-	--text-color: #342C2A;
-	--bg-color-light: #fff;
-	--bg-color: #262D49;
-	--bg-color-0a: #262D4905;
-	--bg-color-1a: #262D491a;
-	--bg-color-2a: #262D492a;
-	--bg-color-3a: #262D493a;
-	--bg-color-4a: #262D494a;
-	--bg-color-5a: #262D495a;
-	--bg-color-6a: #262D496a;
-	--bg-color-7a: #262D497a;
-	--bg-color-8a: #262D498a;
-	--bg-color-9a: #262D499a;
+	--text-color: #065068;
+	--bg-color-light: #ffffff;
+	--bg-color: #ffffff;
+	--bg-color-0a: #fafafa;
+	--bg-color-1a: #ffffff1a;
+	--bg-color-2a: #ffffff2a;
+	--bg-color-3a: #ffffff3a;
+	--bg-color-4a: #ffffff4a;
+	--bg-color-5a: #ffffff5a;
+	--bg-color-6a: #ffffff6a;
+	--bg-color-7a: #ffffff7a;
+	--bg-color-8a: #ffffff8a;
+	--bg-color-9a: #ffffff9a;
 	--gap: 1.5rem;
 	--duration: 30s;
 	--scroll-start: 0;
-	--scroll-end: calc(-100% - var(--gap))
-		/* buttons */
-		--button-color: var(--bg-color-3a);
+	--scroll-end: calc(-100% - var(--gap)) --button-color: var(--bg-color-3a);
 	--button-text: var(--text-color);
-	/* badges */
-	--badge-color: var(--bg-color-1a);
-	--badge-hover-color: var(--bg-color-5a);
-	--badge-text: var(--text-color);
+
+	--badge-color: #28c76f1f;
+	--badge-hover-color: #28c76f1f;
+	--badge-text: #28c76f !important;
+	--badge-hover-text: #28c76f !important;
+	--badge-font-size: 1rem;
+	--badge-font-weight: 600;
+	--badge-padding: .5rem;
+	--badge-border-radius: .5rem;
 }
+
 /* 
 :root {
 	--body-width: 30rem;
@@ -146,75 +165,59 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--badge-hover-color: var(--bg-color-5a);
 	--badge-text: var(--text-color);
 } */
-/* 
+
 :root {
 	--body-width: 30rem;
-	--body-font: SFPro;
+	--body-font: lulu;
 	--body-padding: 1.2rem;
-	--text-color: #62230f;
+	--text-color: #2d2d2d;
 	--bg-color-light: #fff;
-	--bg-color: #f89a3b;
-	--bg-color-0a: #f89a3b05;
-	--bg-color-1a: #f89a3b1a;
-	--bg-color-2a: #f89a3b2a;
-	--bg-color-3a: #f89a3b3a;
-	--bg-color-4a: #f89a3b4a;
-	--bg-color-5a: #f89a3b5a;
-	--bg-color-6a: #f89a3b6a;
-	--bg-color-7a: #f89a3b7a;
-	--bg-color-8a: #f89a3b8a;
-	--bg-color-9a: #f89a3b9a;
+	--bg-color: #997800;
+	--bg-color-0a: #fff;
+	--bg-color-1a: #9978001a;
+	--bg-color-2a: #9978002a;
+	--bg-color-3a: #9978003a;
+	--bg-color-4a: #9978004a;
+	--bg-color-5a: #9978005a;
+	--bg-color-6a: #9978006a;
+	--bg-color-7a: #9978007a;
+	--bg-color-8a: #9978008a;
+	--bg-color-9a: #9978009a;
 	--gap: 1.5rem;
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap));
-	/* buttons */
-	--button-color: var(--bg-color-3a);
+
+	--button-color: #99780005;
 	--button-text: var(--text-color);
-	/* badges */
+
+
+
 	--badge-color: #fee7ba4a;
-	--badge-hover-color: var(--bg-color-5a);
-	--badge-text: #be551d;
+	--badge-hover-color: #fee7ba4a;
+	--badge-text: #be551d !important;
+	--badge-hover-text: #be551d !important;
+	
+
+	--badge-color: #9978001a;
+	--badge-hover-color: #9978002a;
+	--badge-text: #2d2d2d !important;
+	--badge-hover-text: #2d2d2d !important;
+	--badge-font-size: 1.15rem !important;
+	--badge-font-weight: 500;
+	--badge-padding: .5rem;
+	--badge-border-radius: .75rem;
 
 
-} */
+}
 
 
-
-
-
-
-
-
-/* Skin color
- :root {
-	--body-width: 30rem;
-	--body-font: 'Barlow';
-	--body-padding: 1.2rem;
-	--text-color: #C25E23;
-	--bg-color-light: #fff;
-	--bg-color: #EAC189;
-	--bg-color-0a: #EAC18905;
-	--bg-color-1a: #EAC1891a;
-	--bg-color-2a: #EAC1892a;
-	--bg-color-3a: #EAC1893a;
-	--bg-color-4a: #EAC1894a;
-	--bg-color-5a: #EAC1895a;
-	--bg-color-6a: #EAC1896a;
-	--bg-color-7a: #EAC1897a;
-	--bg-color-8a: #EAC1898a;
-	--bg-color-9a: #EAC1899a;
-	--gap: 1.5rem;
-	--duration: 30s;
-	--scroll-start: 0;
-	--scroll-end: calc(-100% - var(--gap))
-} */
 
 /* Green Colors */
 
 /* :root {
 	--body-width: 30rem;
-	--body-font: 'Barlow';
+	--body-font: SFPro;
 	--body-padding: 1.2rem;
 	--text-color: #11471c;
 	--bg-color-light: #fff;
@@ -233,7 +236,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	--duration: 30s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap))
-} */
+}  */
 
 h1,
 .h1,
@@ -251,14 +254,27 @@ h6,
 	font-family: var(--body-font) !important;
 }
 
-span, input, button,div {
+span,
+input,
+button,
+div {
 	font-family: var(--body-font) !important;
 }
 
 .card {
-	background: var(--bg-color-0a);
+	background: #9978003a;
 }
 
+.card-image-overlay::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 13rem;
+	z-index: 1000000;
+	background-image: linear-gradient(to bottom, #99780005 90%, #9978003a 99%);
+}
 
 ::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */

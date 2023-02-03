@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <button class="add-remove-button">
+        <div></div>
+    </button>
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="./app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="./app-assets/js/core/app-menu.js"></script>
+    <script src="./app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
+    <!-- END: Page JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        document.querySelectorAll('.add-remove-button').forEach(button => {
+            button.addEventListener('click', e => {
+                if (button.classList.contains('inactive')) {
+                    button.classList.remove('active', 'inactive');
+                    button.classList.add('active');
+                } else {
+                    if (button.classList.contains('active')) {
+                        button.classList.add('inactive');
+                    }
+                }
+                if (!button.classList.contains('active')) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
