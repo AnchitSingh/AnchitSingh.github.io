@@ -1,6 +1,7 @@
 :root {
-    --body-font: lulu;
+    --body-font: SFPro;
     --unspoken-app-bg: #173b2c03;
+    --unspoken-app-placeholder: #173b2c7a;
     --unspoken-app-text-dark: #173b2c;
     --unspoken-app-text-light: #f8f8ff;
     --unspoken-app-dark-bg: #173b2c4a;
@@ -18,7 +19,7 @@
     --unspoken-card-like-button-fill: #173b2c8a;
     --unspoken-card-like-button-fill: #173b2c8a;
 
-    --unspoken-topbar-right-icon-bg: #fff;
+    --unspoken-topbar-icon-bg: #fff;
     --unspoken-topbar-box-shadow: #173b2c3a;
     
     --unspoken-app-search-bg: #173b2c0e;

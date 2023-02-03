@@ -192,7 +192,7 @@ div {
     width: 3rem;
     height: 3rem;
     display: flex;
-    background: var(--unspoken-topbar-right-icon-bg);
+    background: var(--unspoken-topbar-icon-bg);
     border-radius: .75rem;
     box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
 }
@@ -204,6 +204,31 @@ div {
 }
 
 .unspoken-right-icon .home-right-icon svg path {
+    stroke: var(--unspoken-app-text-dark);
+}
+
+
+.unspoken-left-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.unspoken-left-icon .home-left-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    background: var(--unspoken-topbar-icon-bg);
+    border-radius: .75rem;
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+}
+
+.unspoken-left-icon .home-left-icon svg {
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.unspoken-left-icon .home-left-icon svg path {
     stroke: var(--unspoken-app-text-dark);
 }
 
@@ -399,4 +424,153 @@ div {
     border-radius: .75rem;
     display: flex;
     position: relative;
+}
+
+/* APP CONTENT */
+
+.unspoken-content {
+    max-width: var(--body-width);
+    background: var(--unspoken-app-bg) !important
+}
+
+.unspoken-inner-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 6rem var(--body-padding)
+}
+
+.unspoken-heading {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    color: var(--unspoken-app-text-dark);
+    margin-top: 1.2rem
+}
+
+
+/* CART PAGE */
+.unspoken-cart-card-wrapper {
+    padding: 1rem;
+}
+
+.unspoken-cart-card {
+    height: 7rem;
+    background-color: var(--unspoken-cart-card-bg);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    box-shadow: 1px 1px 54px #173b2c1a;
+}
+
+.unspoken-cart-card .unspoken-image-area {
+    height: 100%;
+    overflow: hidden;
+    width: 7rem;
+    border-radius: inherit;
+}
+
+.unspoken-cart-card .unspoken-text-area {
+    min-width: 12rem;
+    max-width: 15rem;
+    padding: 0rem 0;
+    position: relative;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.unspoken-cart-card .unspoken-text-area p {
+    font-size: 1.2rem;
+    color: var(--unspoken-app-text-dark);
+    margin-bottom: 0;
+}
+
+.unspoken-cart-card .unspoken-icon-area {
+    padding: 0rem 0;
+    width: 3rem;
+    max-width: 4rem;
+    position: relative;
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.unspoken-cart-card .unspoken-icon-area path {
+    fill: var(--unspoken-app-text-dark);
+}
+
+.unspoken-promo-code {
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    width: 100%;
+    height: 4rem;
+    background: var(--unspoken-card-bg);
+    border-radius: .75rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unspoken-promo-code input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    outline: none;
+    color: var(--unspoken-app-text-dark);
+    /* text-transform: uppercase; */
+}
+
+.unspoken-promo-code button {
+    color: var(--unspoken-app-text-dark);
+    background: var(--unspoken-app-dark-bg);
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0.75rem 3rem;
+    border-radius: 0.75rem;
+}
+
+
+.unspoken-promo-code input::-moz-placeholder {
+    color: var(--unspoken-app-placeholder);
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.unspoken-promo-code input:-ms-input-placeholder {
+    color: var(--unspoken-app-placeholder);
+    -ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.unspoken-promo-code input::placeholder {
+    color: var(--unspoken-app-placeholder);
+    transition: color 0.2s;
+}
+
+.unspoken-checkout-button {
+    color: var(--unspoken-app-text-light);
+    background: var(--unspoken-app-text-dark);
+    width: 80%;
+    margin: auto;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+    left: 50%;
+    font-size: 1.2rem;
+    transform: translate(-50%);
 }

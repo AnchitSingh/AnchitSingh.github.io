@@ -1,10 +1,10 @@
 .input {
-    --background: var(--unspoken-card-bg);
-    --placeholder-color: var(--unspoken-app-text-dark);
-    --placeholder-color-hover: var(--unspoken-app-text-dark);
+    --background: #EFF2F1;
+    --placeholder-color: var(--unspoken-app-placeholder);
+    --placeholder-color-hover: var(--unspoken-app-placeholder);
     --close: var(--unspoken-app-text-dark);
     --close-light: var(--unspoken-app-text-dark);
-    --close-background: var(--unspoken-app-text-dark);
+    --close-background: #EFF2F1;
     width: 100%;
     max-width: var(--body-width);
     display: flex;
@@ -33,11 +33,10 @@
     --clear-long-offset: 24px;
     background: var(--unspoken-app-search-bg);
     border-radius: .75rem;
-    height: 4.1rem;
+    height: 3rem;
     padding: 0px;
-    width: 95%;
     margin: auto;
-    border: 1px solid var(--unspoken-app-search-border);
+    /* border: 1px solid var(--unspoken-app-search-border); */
 }
 
 
@@ -58,11 +57,11 @@
 .input .text svg {
     width: 1.54rem;
     height: 1.54rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .input .text svg path {
-    fill: var(--unspoken-app-text-dark);
+    fill: var(--unspoken-app-placeholder);
 }
 
 .input .text input {
@@ -77,10 +76,10 @@
     margin: 0;
     font-family: inherit;
     color: var(--unspoken-app-text-dark);
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
     height: inherit;
-    font-weight: 300 !important;
+    font-weight: 100 !important;
 }
 
 .input .text input::-moz-placeholder {
