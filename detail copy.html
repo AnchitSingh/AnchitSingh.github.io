@@ -31,7 +31,9 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/authentication.css">
+    <!-- END: Page CSS-->
 
+    <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
     <link rel="stylesheet" href="./css/productDetail.css">
     <link rel="stylesheet" href="./css/button.css">
@@ -43,12 +45,13 @@
     <link rel="stylesheet" href="./css/addCross.css">
     <link rel="stylesheet" href="./css/clearInput.css">
     <link rel="stylesheet" href="./css/shopSVG.css">
+
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body style="background: #fff;font-family: SanF !important;" class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+<body style="font-family: SanF !important;" class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
     <!-- BEGIN: Content-->
     <div class="app-content content unspoken-content">
         <div class="content-overlay"></div>
@@ -72,70 +75,36 @@
             </div>
             <!-- topbar end -->
             <div class="content-body">
-                <div class="auth-inner row m-0 unspoken-inner-wrapper unspoken-cover-padding">
-                    <div class="unspoken-shop-image-wrapper">
-                        <div class="unspoken-smart-image-cropper unspoken-shop-cover-image" data-src="./images/pp.png">
-                            <canvas class="hiddenCanvas"></canvas>
-                            <img>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
-                                <path class="ad-Path" d="M 800 600 L 700 600 Q 600 600 550 500 Q 500 400 400 400 Q 300 400 250 500 Q 200 600 100 600 L 0 600 L 800 600 " data-reactid=".0.0.0.0.1"></path>
-                            </svg>
-                        </div>
-                        <div class="unspoken-smart-image-cropper unspoken-shop-profile-image" data-src="./images/profile.png">
+                <div class="auth-inner row m-0 unspoken-inner-wrapper">
+                    <div class="unspoken-image-product-detail">
+                        <div class="unspoken-cover-product-detail unspoken-smart-image-cropper" data-src="./images/pp7.jpg">
                             <canvas class="hiddenCanvas"></canvas>
                             <img>
                         </div>
-                    </div>
-
-                    <div class="unspoken-shop-content-wrapper">
-                        <h2 class="unspoken-shop-title">Charles Sharma</h2>
-                        <span>@charles</span>
-                        <div class="mt-2" style="width: 100%;display: flex;justify-content: space-around;">
-                            <button class="btn waves-effect waves-light unspoken-shop-follow">Follow</button>
-                            <button class="btn waves-effect waves-light unspoken-shop-donate">
-                                <svg style="margin-bottom: .2rem;" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3.16548 3.97656C5.05278 2.17326 8.1127 2.17334 10 5.22861C11.8873 2.17326 14.9472 2.17326 16.8345 3.97656C18.7218 5.79395 18.7218 8.85124 16.8345 10.6686L10 17.25L3.16548 10.6686C1.27817 8.85124 1.27817 5.79395 3.16548 3.97656Z" stroke="#272E35" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg>
-                                Donate
-                            </button>
-                        </div>
-                        <div class="mt-2 unspoken-shop-featured" >
-                            <h2>Featured Products</h2>
-                            <div class="masonry">
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp.png">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp2.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp3.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp4.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp5.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp6.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/pp7.jpg">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
-                                </div>
-                                <div class="item unspoken-smart-image-cropper unspoken-autoResize" data-src="./images/profile.png">
-                                    <canvas class="hiddenCanvas"></canvas>
-                                    <img>
+                        <!-- <div class="sideHolderWrapper">
+                            <div  data-src="./etsy/2.png" class="unspoken-smart-image-cropper sideHolder">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img>
+                            </div>
+                            <div  data-src="./images/Yellow Illustration Hamster Circle Sticker.png" class="unspoken-smart-image-cropper sideHolder">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img>
+                            </div>
+                            <div  data-src="./images/Pink Lazy Dog illustration Pet Care Logo (1).png" class="unspoken-smart-image-cropper sideHolder active">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img>
+                            </div>
+                            <div  data-src="./images/Pink Lazy Dog illustration Pet Care Logo.png" class="unspoken-smart-image-cropper sideHolder">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img></img>
+                                <div class="sideHolderCount">
+                                    <span style="margin: auto;position: relative;">+3</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                    </div>
+                    <div style="width: 100%;height: 45vh;position: absolute;bottom: 0;left: 0;">
+
                     </div>
                 </div>
             </div>
@@ -157,6 +126,10 @@
     <script src="./app-assets/js/core/app-menu.js"></script>
     <script src="./app-assets/js/core/app.js"></script>
     <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
+    <!-- END: Page JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="./js/svg.min.js"></script>
     <script>

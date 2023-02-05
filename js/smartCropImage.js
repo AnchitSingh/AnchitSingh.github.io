@@ -1,10 +1,11 @@
-smartCropping = (id, autoHeight = false, shortHeight = 0, longHeight = 0) => {
+smartCropping = (imgBox, canvas, viewImg, autoHeight = false, shortHeight = 0, longHeight = 0) => {
     try {
-        var imgBox = $('#' + id)
-        var canvas = $('#' + id + '-canvas')[0];
+        // var imgBox = $('#' + id)
+        // var canvas = $('#' + id + '-canvas')[0];
+        canvas = canvas[0]
         var ctx = canvas.getContext('2d');
         var img;
-        var viewImg = $('#' + id + '-image')
+        // var viewImg = $('#' + id + '-image')
         load(imgBox.attr('data-src'));
         let divHeight = imgBox.height()
         let autoWidth = imgBox.width()
@@ -54,7 +55,8 @@ smartCropping = (id, autoHeight = false, shortHeight = 0, longHeight = 0) => {
             ctx.drawImage(img, 0, 0);
 
             viewImg.attr('src', img.src);
-            console.log('hii', viewImg)
+
+            console.log(imgBox[0].id, viewImg[0].id)
             let wFactor = (imgBox.width() / crop.width)
             let hFactor = (divHeight / crop.height)
             viewImg.css('margin-left', -1 * crop.x * wFactor + 'px')
@@ -80,8 +82,18 @@ smartCropping = (id, autoHeight = false, shortHeight = 0, longHeight = 0) => {
     } catch (error) {
         console.log('Error fetching images')
     }
-
-
 }
 
-
+function convertRemToPixels(rem) {
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+let crops = $('.unspoken-smart-image-cropper');
+for (let crop of crops) {
+    let viewImage = $(crop).find('img');
+    let canvas = $(crop).find('canvas');
+    if ($(crop).hasClass('unspoken-autoResize')) {
+        smartCropping($(crop), canvas, viewImage, true, convertRemToPixels(9), convertRemToPixels(19));
+    } else {
+        smartCropping($(crop), canvas, viewImage);
+    }
+}

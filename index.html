@@ -41,9 +41,9 @@
         <div class="content-wrapper">
             <div class="unspoken-topbar">
                 <a href="#" class="unspoken-avatar-group">
-                    <div class="home-avatar" id="homeAvatarHolder" data-src="./assets/profile.jpg">
-                        <canvas class="hiddenCanvas" id="homeAvatarHolder-canvas"></canvas>
-                        <img alt="" id="homeAvatarHolder-image">
+                    <div class="home-avatar unspoken-smart-image-cropper" data-src="./assets/profile.jpg">
+                        <canvas class="hiddenCanvas"></canvas>
+                        <img alt="">
                     </div>
                 </a>
                 <a href="./card-cart.html" class="unspoken-right-icon">
@@ -104,16 +104,42 @@
                         </div>
                     </div>
                     <div class="unspoken-card-wrapper">
-                        <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp.png" id="cardImageHolder1">
-                                <canvas class="hiddenCanvas" id="cardImageHolder1-canvas"></canvas>
-                                <img alt="" id="cardImageHolder1-image">
-                                <div class="unspoken-like-button active">
-                                    <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
-                                    </svg>
+                        <a href="detail.html">
+                            <div class="unspoken-card">
+                                <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp.png">
+                                    <canvas class="hiddenCanvas"></canvas>
+                                    <img alt="">
+                                    <div class="unspoken-like-button active">
+                                        <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="unspoken-card-body">
+                                    <span class="unspoken-title">Wedding Card</span><br><a href="">Tim Cook</a>
+                                    <div class="unspoken-card-price-wrapper">
+                                        <div class="unspoken-price-integer">$27<span class="unspoken-price-decimal">.99</span></div>
+                                        <div class="unspoken-card-cart-wrapper">
+                                            <button class="add-remove-button">
+                                                <div></div>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </a>
+                        <div class="unspoken-card">
+                            <a href="detail.html">
+                                <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp4.jpg">
+                                    <canvas class="hiddenCanvas"></canvas>
+                                    <img alt="">
+                                    <div class="unspoken-like-button">
+                                        <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
                             <div class="unspoken-card-body">
                                 <span class="unspoken-title">Wedding Card</span><br><a href="">Tim Cook</a>
                                 <div class="unspoken-card-price-wrapper">
@@ -127,9 +153,9 @@
                             </div>
                         </div>
                         <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp4.jpg" id="cardImageHolder2">
-                                <canvas class="hiddenCanvas" id="cardImageHolder2-canvas"></canvas>
-                                <img alt="" id="cardImageHolder2-image">
+                            <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp6.jpg">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img alt="">
                                 <div class="unspoken-like-button">
                                     <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
@@ -149,9 +175,9 @@
                             </div>
                         </div>
                         <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp6.jpg" id="cardImageHolder3">
-                                <canvas class="hiddenCanvas" id="cardImageHolder3-canvas"></canvas>
-                                <img alt="" id="cardImageHolder3-image">
+                            <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp7.jpg">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img alt="">
                                 <div class="unspoken-like-button">
                                     <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
@@ -171,9 +197,9 @@
                             </div>
                         </div>
                         <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp7.jpg" id="cardImageHolder4">
-                                <canvas class="hiddenCanvas" id="cardImageHolder4-canvas"></canvas>
-                                <img alt="" id="cardImageHolder4-image">
+                            <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp2.jpg">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img alt="">
                                 <div class="unspoken-like-button">
                                     <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
@@ -193,9 +219,9 @@
                             </div>
                         </div>
                         <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp2.jpg" id="cardImageHolder5">
-                                <canvas class="hiddenCanvas" id="cardImageHolder5-canvas"></canvas>
-                                <img alt="" id="cardImageHolder5-image">
+                            <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/pp3.jpg">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img alt="">
                                 <div class="unspoken-like-button">
                                     <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
@@ -215,31 +241,9 @@
                             </div>
                         </div>
                         <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/pp3.jpg" id="cardImageHolder6">
-                                <canvas class="hiddenCanvas" id="cardImageHolder6-canvas"></canvas>
-                                <img alt="" id="cardImageHolder6-image">
-                                <div class="unspoken-like-button">
-                                    <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="unspoken-card-body">
-                                <span class="unspoken-title">Wedding Card</span><br><a href="">Tim Cook</a>
-                                <div class="unspoken-card-price-wrapper">
-                                    <div class="unspoken-price-integer">$27<span class="unspoken-price-decimal">.99</span></div>
-                                    <div class="unspoken-card-cart-wrapper">
-                                        <button class="add-remove-button">
-                                            <div></div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="unspoken-card">
-                            <div class="unspoken-card-header" data-src="./images/tyc.png" id="cardImageHolder7">
-                                <canvas class="hiddenCanvas" id="cardImageHolder7-canvas"></canvas>
-                                <img alt="" id="cardImageHolder7-image">
+                            <div class="unspoken-card-header unspoken-smart-image-cropper" data-src="./images/tyc.png">
+                                <canvas class="hiddenCanvas"></canvas>
+                                <img alt="">
                                 <div class="unspoken-like-button">
                                     <svg style="margin:auto" width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.8371 25.6355C14.1359 25.6355 14.5719 25.4081 14.9309 25.1862C21.4737 20.9674 25.6742 16.0235 25.6742 11.0166C25.6742 6.7057 22.6979 3.71484 18.9634 3.71484C16.6381 3.71484 14.8909 4.99945 13.8371 6.92461C12.8026 5.00906 11.034 3.71484 8.71085 3.71484C4.97632 3.71484 2 6.7057 2 11.0166C2 16.0235 6.20047 20.9674 12.7529 25.1862C13.1023 25.4081 13.5362 25.6355 13.8371 25.6355Z" />
@@ -259,6 +263,34 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="unspoken-navbar-wrapper">
+                <div class="unspoken-navbar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 17V11.845C22 10.433 22 9.72701 21.8204 9.07517C21.6613 8.49771 21.3998 7.95353 21.0483 7.46857C20.6514 6.92115 20.1001 6.48011 18.9976 5.59805L16.9976 3.99805C15.214 2.57118 14.3222 1.85774 13.3332 1.58413C12.4608 1.34279 11.5392 1.34279 10.6668 1.58413C9.67783 1.85774 8.78603 2.57118 7.00244 3.99805L5.00244 5.59805C3.89986 6.48011 3.34857 6.92115 2.95174 7.46857C2.6002 7.95353 2.33865 8.49771 2.17957 9.07517C2 9.72701 2 10.433 2 11.845V17C2 19.7614 4.23858 22 7 22C8.10457 22 9 21.1046 9 20V15.9999C9 14.3431 10.3431 12.9999 12 12.9999C13.6569 12.9999 15 14.3431 15 15.9999V20C15 21.1046 15.8954 22 17 22C19.7614 22 22 19.7614 22 17Z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="unspoken-navbar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H18M18 6H22M18 6V10M18 6V2M17.2 22H18.8C19.9201 22 20.4802 22 20.908 21.782C21.2843 21.5903 21.5903 21.2843 21.782 20.908C22 20.4802 22 19.9201 22 18.8V17.2C22 16.0799 22 15.5198 21.782 15.092C21.5903 14.7157 21.2843 14.4097 20.908 14.218C20.4802 14 19.9201 14 18.8 14H17.2C16.0799 14 15.5198 14 15.092 14.218C14.7157 14.4097 14.4097 14.7157 14.218 15.092C14 15.5198 14 16.0799 14 17.2V18.8C14 19.9201 14 20.4802 14.218 20.908C14.4097 21.2843 14.7157 21.5903 15.092 21.782C15.5198 22 16.0799 22 17.2 22ZM5.2 22H6.8C7.92011 22 8.48016 22 8.90798 21.782C9.28431 21.5903 9.59027 21.2843 9.78201 20.908C10 20.4802 10 19.9201 10 18.8V17.2C10 16.0799 10 15.5198 9.78201 15.092C9.59027 14.7157 9.28431 14.4097 8.90798 14.218C8.48016 14 7.92011 14 6.8 14H5.2C4.07989 14 3.51984 14 3.09202 14.218C2.71569 14.4097 2.40973 14.7157 2.21799 15.092C2 15.5198 2 16.0799 2 17.2V18.8C2 19.9201 2 20.4802 2.21799 20.908C2.40973 21.2843 2.71569 21.5903 3.09202 21.782C3.51984 22 4.07989 22 5.2 22ZM5.2 10H6.8C7.92011 10 8.48016 10 8.90798 9.78201C9.28431 9.59027 9.59027 9.28431 9.78201 8.90798C10 8.48016 10 7.92011 10 6.8V5.2C10 4.07989 10 3.51984 9.78201 3.09202C9.59027 2.71569 9.28431 2.40973 8.90798 2.21799C8.48016 2 7.92011 2 6.8 2H5.2C4.07989 2 3.51984 2 3.09202 2.21799C2.71569 2.40973 2.40973 2.71569 2.21799 3.09202C2 3.51984 2 4.07989 2 5.2V6.8C2 7.92011 2 8.48016 2.21799 8.90798C2.40973 9.28431 2.71569 9.59027 3.09202 9.78201C3.51984 10 4.07989 10 5.2 10Z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="unspoken-navbar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L17.364 17.364M17.364 17.364C18.9926 15.7353 20 13.4853 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.4853 20 15.7353 18.9926 17.364 17.364Z" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="unspoken-navbar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21C13 21 22 16.0002 22 9.00044C22 5.50058 19 3.04407 16 3.00066C14.5 2.97896 13 3.50067 12 5.00061C11 3.50067 9.47405 3.00066 8 3.00066C5 3.00066 2 5.50058 2 9.00045C2 16.0002 11 21 12 21Z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="unspoken-navbar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18.8C4 16.149 6.14903 14 8.8 14H15.2C17.851 14 20 16.149 20 18.8V18.8C20 20.5673 18.5673 22 16.8 22H7.2C5.43269 22 4 20.5673 4 18.8V18.8Z" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6Z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -282,12 +314,6 @@
     <script src="./js/heartButton.js"></script>
     <script src="./js/smartcrop.js"></script>
     <script src="./js/smartCropImage.js"></script>
-    <script>
-        function convertRemToPixels(r) {
-            return r * parseFloat(getComputedStyle(document.documentElement).fontSize)
-        }
-        smartCropping("homeAvatarHolder"), smartCropping("cardImageHolder1"), smartCropping("cardImageHolder2"), smartCropping("cardImageHolder3"), smartCropping("cardImageHolder4"), smartCropping("cardImageHolder5"), smartCropping("cardImageHolder6"), smartCropping("cardImageHolder7")
-    </script>
 </body>
 
 </html>

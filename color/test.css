@@ -14,15 +14,14 @@
     --unspoken-card-btn-bg: #173b2c;
     --unspoken-card-like-button-fill: #173b2c8a;
     --unspoken-card-like-button-bg: #fff;
-    --unspoken-card-like-button-fill: #173b2c8a;
-    --unspoken-card-like-button-fill: #173b2c8a;
-    --unspoken-card-like-button-fill: #173b2c8a;
-    --unspoken-card-like-button-fill: #173b2c8a;
+    --unspoken-card-like-button-border: #173b2c1a;
 
     --unspoken-topbar-icon-bg: #fff;
     --unspoken-topbar-box-shadow: #173b2c3a;
-    
+
     --unspoken-app-search-bg: #173b2c0e;
-    --unspoken-app-search-border:#173b2c2a;
+    --unspoken-app-search-border: #173b2c2a;
+
+    --unspoken-image-overlay: #f4755808;
 
 }

@@ -22,6 +22,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-radius: .625rem;
+    position: relative;
     overflow: hidden;
     box-shadow: 1px 1px 10px #ebf5e9, -1px -1px 10px #daeaed;
 }
@@ -29,6 +30,16 @@
     scale: 1.05;
 }
 
+.item::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--unspoken-image-overlay);
+    z-index: 100;
+}
 
 @media only screen and (max-width: 320px) {
     .masonry {

@@ -1,0 +1,9 @@
+.ad-SVG {
+    display: block;
+}
+
+.ad-Path {
+    fill: #FCFDFD;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}

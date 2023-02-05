@@ -375,7 +375,7 @@ div {
     right: 1rem;
     border-radius: .75rem;
     display: flex;
-    border: 1px solid #f475583a;
+    border: 1px solid var(--unspoken-card-like-button-border);
 }
 
 
@@ -395,7 +395,7 @@ div {
     left: 0;
     top: 0;
     z-index: 1000;
-    background: rgba(244, 117, 88, 0.03);
+    background: var(--unspoken-image-overlay);
 }
 
 .unspoken-card-price-wrapper {
@@ -475,6 +475,7 @@ div {
     overflow: hidden;
     width: 7rem;
     border-radius: inherit;
+    position: relative;
 }
 
 .unspoken-cart-card .unspoken-text-area {
@@ -573,4 +574,282 @@ div {
     left: 50%;
     font-size: 1.2rem;
     transform: translate(-50%);
+}
+
+.unspoken-cover-padding {
+    padding-top: 22rem;
+}
+
+.unspoken-shop-image-wrapper {
+    position: absolute;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18rem;
+}
+
+.unspoken-shop-cover-image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.unspoken-shop-cover-image svg {
+    position: absolute;
+    display: block;
+    bottom: 0rem;
+}
+
+.unspoken-shop-profile-image {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border-radius: 50%;
+    bottom: calc(0% - 3.5rem);
+    position: absolute;
+}
+
+.unspoken-shop-content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+}
+
+.unspoken-shop-title {
+    font-size: 1.7rem;
+}
+
+.unspoken-shop-follow {
+    width: 10rem;
+    height: 3.5rem;
+    background: var(--unspoken-app-text-dark);
+    color: var(--unspoken-app-text-light);
+}
+
+.unspoken-shop-donate {
+    width: 10rem;
+    height: 3.5rem;
+    background: var(--unspoken-topbar-icon-bg);
+    color: var(--unspoken-app-text-dark);
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 64px var(--unspoken-topbar-box-shadow);
+}
+
+.unspoken-shop-featured {
+    width: 100%;
+    height: 50vh;
+    padding: 1rem 0;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.unspoken-image-product-detail {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    ;
+}
+
+.unspoken-cover-product-detail {
+    width: 100%;
+    height: 60vh;
+    padding: 0rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+}
+
+/* 
+.unspoken-product-detail-content-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
+    height: 55%;
+    border-radius: .15rem;
+    box-shadow: -1px -1px 54px var(--unspoken-topbar-box-shadow);
+    padding: var(--body-padding);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(180deg, #eff2f15a, transparent);
+    backdrop-filter: blur(100px);
+} */
+
+.unspoken-product-detail-cover {
+    position: fixed;
+    max-width: var(--body-width);
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 46vh;
+    display: flex;
+    justify-content: center;
+}
+
+.unspoken-product-detail-content-box-wrapper {
+    padding-top: 45vh;
+    height: fit-content;
+}
+
+.unspoken-product-detail-content-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: -1px -1px 54px var(--unspoken-topbar-box-shadow);
+    padding: var(--body-padding);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(180deg, var(--unspoken-app-bg), #fff 10%);
+    backdrop-filter: blur(20px);
+}
+
+.unspoken-smart-image-cropper {
+    position: relative;
+}
+
+.unspoken-smart-image-cropper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4755808;
+}
+
+.unspoken-bottom-image-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: .8rem;
+}
+
+.unspoken-bottom-image-wrapper .unspoken-bottom-image {
+    width: 3.4rem;
+    height: 3.4rem;
+    border: .2rem solid #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+    margin: 0 .2rem;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.unspoken-bottom-image-wrapper .unspoken-bottom-image:hover {
+    scale: 1.1;
+}
+
+.product-detail-btn-sm {
+    width: 3.4rem;
+    height: 3.4rem;
+    background: #fff;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+}
+
+.product-detail-btn-lg {
+    width: 12rem;
+    height: 3.4rem;
+    background: var(--unspoken-app-text-dark);
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.unspoken-navbar-wrapper {
+    max-width: var(--body-width);
+    padding: .5rem;
+    width: 95%;
+    height: 5rem;
+    position: fixed;
+    background: rgba(252, 253, 253, 0.97);
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+    z-index: 999999999999;
+    bottom: .5rem;
+    left: .7rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unspoken-navbar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.unspoken-navbar svg {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.unspoken-navbar svg path {
+    stroke-width: 1.8;
+    stroke: var(--unspoken-app-text-dark);
+}
+
+.unspoken-navbar:hover {
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+}
+
+.special-svg-filter {
+    transition: all 1s ease-in-out;
+}
+
+.special-svg-filter svg {
+    fill: var(--unspoken-app-text-dark);
+    transition: all .16s ease-in-out;
+}
+
+.special-svg-filter:hover svg {
+    filter: drop-shadow(2px 2px 10px #307ef3ef) drop-shadow(-2px -2px 10px #307ef3ef);
+    fill: #307ef3;
+}
+
+
+.special-svg-filter-stroke {
+    transition: all 1s ease-in-out;
+}
+
+.special-svg-filter-stroke svg {
+    stroke: var(--unspoken-app-text-dark);
+    transition: all .16s ease-in-out;
+}
+
+.special-svg-filter-stroke:hover svg {
+    filter: drop-shadow(5px 10px 15px #307ef39a) drop-shadow(-5px -10px 15px #307ef39a);
+    stroke: #307ef3;
 }

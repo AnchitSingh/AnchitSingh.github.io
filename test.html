@@ -6,51 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 90vh;
+            width: 20rem;
+            overflow: hidden;
+            border: 3px solid;
+        }
+
+        .content {
+            height: 300vh;
+            width: 17rem;
+            margin: 0 auto;
+            background: rgba(128, 128, 128, 0.813);
+        }
+    </style>
 </head>
 
 <body>
-    <button class="add-remove-button">
-        <div></div>
-    </button>
+    <div class="container">
+        <div class="content">
+            <!-- Your content goes here -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
+            </p>
+        </div>
+    </div>
 
-    <!-- BEGIN: Vendor JS-->
-    <script src="./app-assets/vendors/js/vendors.min.js"></script>
-    <!-- BEGIN Vendor JS-->
-
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- BEGIN: Theme JS-->
-    <script src="./app-assets/js/core/app-menu.js"></script>
-    <script src="./app-assets/js/core/app.js"></script>
-    <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
-    <!-- END: Page JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script>
-        document.querySelectorAll('.add-remove-button').forEach(button => {
-            button.addEventListener('click', e => {
-                if (button.classList.contains('inactive')) {
-                    button.classList.remove('active', 'inactive');
-                    button.classList.add('active');
-                } else {
-                    if (button.classList.contains('active')) {
-                        button.classList.add('inactive');
-                    }
-                }
-                if (!button.classList.contains('active')) {
-                    button.classList.add('active');
+        $(window).on('mousewheel DOMMouseScroll', function(event) {
+            event.preventDefault();
+            var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+            var contentHeight = $('#content').outerHeight();
+            var currentTranslateY = parseInt($('#content').css('transform').split(',')[5]);
+            var targetTranslateY = currentTranslateY + delta;
+            if (targetTranslateY > 0) {
+                targetTranslateY = 0;
+            }
+            if (targetTranslateY < -(contentHeight - window.innerHeight)) {
+                targetTranslateY = -(contentHeight - window.innerHeight);
+            }
+            $({
+                scrollTop: currentTranslateY
+            }).animate({
+                scrollTop: targetTranslateY
+            }, {
+                duration: 200,
+                easing: 'easeOutCubic',
+                step: function(now) {
+                    $('#content').css({
+                        transform: 'translateY(' + now + 'px)'
+                    });
                 }
             });
         });
     </script>
+
+
 
 </body>
 
