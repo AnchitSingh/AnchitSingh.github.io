@@ -7,86 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            padding: 0;
-            margin: 0;
+        .circular-div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .container {
-            height: 90vh;
-            width: 20rem;
-            overflow: hidden;
-            border: 3px solid;
-        }
-
-        .content {
-            height: 300vh;
-            width: 17rem;
-            margin: 0 auto;
-            background: rgba(128, 128, 128, 0.813);
+        .notification-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transform: rotate(45deg);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
-            <!-- Your content goes here -->
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis optio magni quae consequatur? Incidunt commodi, ipsa eaque ad amet, laborum nostrum, saepe voluptatibus temporibus qui officia harum molestias deserunt.
-            </p>
-        </div>
+    <div class="circular-div">
+        <div class="notification-dot"></div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script>
-        $(window).on('mousewheel DOMMouseScroll', function(event) {
-            event.preventDefault();
-            var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-            var contentHeight = $('#content').outerHeight();
-            var currentTranslateY = parseInt($('#content').css('transform').split(',')[5]);
-            var targetTranslateY = currentTranslateY + delta;
-            if (targetTranslateY > 0) {
-                targetTranslateY = 0;
-            }
-            if (targetTranslateY < -(contentHeight - window.innerHeight)) {
-                targetTranslateY = -(contentHeight - window.innerHeight);
-            }
-            $({
-                scrollTop: currentTranslateY
-            }).animate({
-                scrollTop: targetTranslateY
-            }, {
-                duration: 200,
-                easing: 'easeOutCubic',
-                step: function(now) {
-                    $('#content').css({
-                        transform: 'translateY(' + now + 'px)'
-                    });
-                }
-            });
-        });
-    </script>
-
-
-
 </body>
 
 </html>

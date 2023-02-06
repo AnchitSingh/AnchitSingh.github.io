@@ -1,0 +1,104 @@
+const mainTabs = document.querySelector(".main-tabs");
+const mainSliderCircle = document.querySelector(".main-slider-circle");
+const roundButtons = document.querySelectorAll(".round-button");
+
+const colors = {
+    gray: {
+        50: {
+            value: "#b9b9bc5e"
+        },
+        100: {
+            value: "#b9b9bc5e"
+        }
+    }
+};
+
+const getColor = (color, variant) => {
+    return colors[color][variant].value;
+};
+
+const handleActiveTab = (tabs, event, className) => {
+    tabs.forEach((tab) => {
+        tab.classList.remove(className);
+    });
+
+    if (!event.target.classList.contains(className)) {
+        event.target.classList.add(className);
+    }
+};
+
+mainTabs.addEventListener("click", (event) => {
+    const root = document.documentElement;
+    const targetColor = event.target.dataset.color;
+    const targetTranslateValue = event.target.dataset.translateValue;
+
+    if (event.target.classList.contains("round-button")) {
+        mainSliderCircle.classList.remove("animate-jello");
+        void mainSliderCircle.offsetWidth;
+        mainSliderCircle.classList.add("animate-jello");
+
+        root.style.setProperty("--translate-main-slider", targetTranslateValue);
+        root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
+        root.style.setProperty("--background-color", getColor(targetColor, 100));
+
+        handleActiveTab(roundButtons, event, "active");
+
+        if (!event.target.classList.contains("gallery")) {
+            root.style.setProperty("--filters-container-height", "0");
+            root.style.setProperty("--filters-wrapper-opacity", "0");
+        } else {
+            root.style.setProperty("--filters-container-height", "3.5rem");
+            root.style.setProperty("--filters-wrapper-opacity", "1");
+        }
+        if (!event.target.classList.contains("fontSize")) {
+            root.style.setProperty("--filters-fsize-container-height", "0");
+            root.style.setProperty("--filters-fsize-display", "none");
+        } else {
+            root.style.setProperty("--filters-fsize-container-height", "3.5rem");
+            root.style.setProperty("--filters-fsize-display", "flex");
+        }
+        if (!event.target.classList.contains("font")) {
+            root.style.setProperty("--filters-font-container-height", "0");
+            root.style.setProperty("--filters-font-wrapper-opacity", "0");
+            $('#close-button-fontsearch').click()
+            $('#close-button').click()
+        } else {
+            root.style.setProperty("--filters-font-container-height", "3.5rem");
+            root.style.setProperty("--filters-font-wrapper-opacity", "1");
+        }
+        //     root.style.setProperty("--filters-font-container-height", "0");
+        //     root.style.setProperty("--filters-font-display", "none");
+        //     root.style.setProperty("--filters-font-wrapper-opacity", "1");
+        // } else {
+        //     root.style.setProperty("--filters-font-container-height", "3.5rem");
+        //     root.style.setProperty("--filters-font-display", "flex");
+        //     root.style.setProperty("--filters-font-wrapper-opacity", "0");
+        // }
+    }
+});
+
+let filterTabs = document.querySelector(".filter-tabs");
+let filterButtons = document.querySelectorAll(".filter-button");
+let filterFontTabs = document.querySelector(".filter-font-tabs");
+let filterFontButtons = document.querySelectorAll(".filter-font-button");
+
+
+filterTabs.addEventListener("click", (event) => {
+    let root = document.documentElement;
+    let targetTranslateValue = event.target.dataset.translateValue;
+
+    if (event.target.classList.contains("filter-button")) {
+        root.style.setProperty("--translate-filters-slider", targetTranslateValue);
+        handleActiveTab(filterButtons, event, "filter-active");
+    }
+});
+
+filterFontTabs.addEventListener("click", (event) => {
+    let root = document.documentElement;
+    let targetTranslateValue = event.target.dataset.translateValue;
+
+    if (event.target.classList.contains("filter-font-button")) {
+        root.style.setProperty("--translate-filters-font-slider", targetTranslateValue);
+        handleActiveTab(filterFontButtons, event, "filter-font-active");
+    }
+});

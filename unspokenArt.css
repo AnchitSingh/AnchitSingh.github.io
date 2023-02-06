@@ -789,7 +789,7 @@ div {
     max-width: var(--body-width);
     padding: .5rem;
     width: 95%;
-    height: 5rem;
+    height: 4rem;
     position: fixed;
     background: rgba(252, 253, 253, 0.97);
     box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
@@ -803,21 +803,21 @@ div {
 }
 
 .unspoken-navbar {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 1rem;
     display: flex;
     transition: all .5s ease-in-out;
 }
 
 .unspoken-navbar svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: auto;
 }
 
 .unspoken-navbar svg path {
-    stroke-width: 1.8;
+    stroke-width: 2;
     stroke: var(--unspoken-app-text-dark);
 }
 
@@ -852,4 +852,46 @@ div {
 .special-svg-filter-stroke:hover svg {
     filter: drop-shadow(5px 10px 15px #307ef39a) drop-shadow(-5px -10px 15px #307ef39a);
     stroke: #307ef3;
+}
+
+
+.unspoken-toolbar-wrapper {
+    max-width: calc(var(--body-width) - 1rem);
+    padding: .5rem;
+    width: 95%;
+    height: 4rem;
+    position: fixed;
+    background: rgba(252, 253, 253, 0.97);
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+    z-index: 999999999999;
+    bottom: .5rem;
+    left: .7rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unspoken-toolbar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+
+.unspoken-toolbar svg {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.unspoken-toolbar svg path {
+    stroke-width: 1.5;
+    stroke: var(--unspoken-app-text-dark);
+}
+
+.unspoken-toolbar:hover {
+    box-shadow: 1px 1px 54px var(--unspoken-topbar-box-shadow);
+    width: 6rem;
 }

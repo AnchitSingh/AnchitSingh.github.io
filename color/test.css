@@ -25,3 +25,31 @@
     --unspoken-image-overlay: #f4755808;
 
 }
+
+:root {
+    --body-font: SFPro;
+    --unspoken-app-bg: #6e6b7b03;
+    --unspoken-app-placeholder: #6e6b7b7a;
+    --unspoken-app-text-dark: #6e6b7b;
+    --unspoken-app-text-light: #f8f8ff;
+    --unspoken-app-dark-bg: #6e6b7b4a;
+
+    --unspoken-card-bg: #6e6b7b0f;
+    --unspoken-card-title: #6e6b7b;
+    --unspoken-card-link: #6e6b7bb4;
+    --unspoken-card-price: #6e6b7be7;
+    --unspoken-card-btn-color: #6e6b7b0a;
+    --unspoken-card-btn-bg: #6e6b7b;
+    --unspoken-card-like-button-fill: #6e6b7b8a;
+    --unspoken-card-like-button-bg: #fff;
+    --unspoken-card-like-button-border: #6e6b7b1a;
+
+    --unspoken-topbar-icon-bg: #fff;
+    --unspoken-topbar-box-shadow: #6e6b7b3a;
+
+    --unspoken-app-search-bg: #6e6b7b0e;
+    --unspoken-app-search-border: #6e6b7b2a;
+
+    --unspoken-image-overlay: #f4755808;
+
+}

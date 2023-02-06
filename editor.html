@@ -34,21 +34,16 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <!-- END: Custom CSS-->
-    <!-- <link rel="stylesheet" href="loginMobile.css"> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
-    <link rel="stylesheet" href="productDetail.css">
-    <link rel="stylesheet" href="button.css">
-
-    <link rel="stylesheet" href="mason.css">
-
-    <link rel="stylesheet" href="marquee.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
-    <link rel="stylesheet" href="productDetail.css">
-    <link rel="stylesheet" href="hamburger.css">
-    <link rel="stylesheet" href="clearInput.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/mason.css">
+    <link rel="stylesheet" href="./css/marquee.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./css/masonry.css">
+    <link rel="stylesheet" href="unspokenArt.css">
+    <link rel="stylesheet" href="./css/addCross.css">
+    <link rel="stylesheet" href="./css/clearInput.css">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <style>
@@ -90,9 +85,9 @@
             stroke: #b1b6bf;
         }
     </style>
-    <link rel="stylesheet" href="editor-tabs.css">
-    <link rel="stylesheet" href="baloon.css">
-    <link rel="stylesheet" href="upload-expand.css">
+    <link rel="stylesheet" href="./css/editor-tabs.css">
+    <link rel="stylesheet" href="./css/baloon.css">
+    <link rel="stylesheet" href="./css/upload-expand.css">
 </head>
 
 <!-- END: Head-->
@@ -106,30 +101,34 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <!-- topbar start -->
-            <div style="position: absolute;z-index: 99999;width: 100%;display: flex;justify-content: space-between;background: transparent;">
-                <a href="./index.html" style="padding: var(--body-padding) 0 0 var(--body-padding);">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M11 7.99996L7 12M7 12L11 16M7 12H17M10 22H14C16.8003 22 18.2004 22 19.27 21.455C20.2108 20.9757 20.9757 20.2108 21.455 19.27C22 18.2004 22 16.8003 22 14V10C22 7.19974 22 5.79961 21.455 4.73005C20.9757 3.78924 20.2108 3.02433 19.27 2.54497C18.2004 2 16.8003 2 14 2H10C7.19974 2 5.79961 2 4.73005 2.54497C3.78924 3.02433 3.02433 3.78924 2.54497 4.73005C2 5.79961 2 7.19974 2 10V14C2 16.8003 2 18.2004 2.54497 19.27C3.02433 20.2108 3.78924 20.9757 4.73005 21.455C5.79961 22 7.19974 22 10 22Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+            <div class="unspoken-topbar">
+                <a href="./index.html" class="unspoken-left-icon">
+                    <div class="home-left-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 10H16.25M3.75 10L7.75 5.75M3.75 10L7.75 14.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </a>
-                <a href="./card-cart.html" style="padding: var(--body-padding) var(--body-padding) 0  0;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.9999 9H7.99991M7.99991 6.08268V6C7.99991 3.79086 9.79077 2 11.9999 2C14.2091 2 15.9999 3.79086 15.9999 6V6.08268M7.99991 6.08268C8.78662 6 9.78914 6 11.1878 6H12.812C14.2107 6 15.2132 6 15.9999 6.08268M7.99991 6.08268C7.39786 6.14596 6.92219 6.25766 6.49207 6.45483C5.61778 6.85563 4.87763 7.50008 4.36037 8.31092C3.77337 9.23109 3.60354 10.4539 3.26388 12.8995C2.8277 16.0399 2.60962 17.6101 3.08915 18.8297C3.51012 19.9003 4.28741 20.793 5.28995 21.3573C6.43192 22 8.01722 22 11.1878 22H12.812C15.9826 22 17.5679 22 18.7099 21.3573C19.7124 20.793 20.4897 19.9003 20.9107 18.8297C21.3902 17.6101 21.1721 16.0399 20.7359 12.8995C20.3963 10.4539 20.2265 9.23109 19.6395 8.31092C19.1222 7.50008 18.382 6.85563 17.5078 6.45483C17.0776 6.25766 16.602 6.14596 15.9999 6.08268" stroke="var(--text-color)" stroke-width="1.3" stroke-linecap="round"></path>
-                    </svg>
+                <a href="./card-cart.html" class="unspoken-right-icon">
+                    <div class="home-right-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.25 7.25V4.95C13.25 3.8299 13.25 3.26984 13.032 2.84202C12.8403 2.46569 12.5343 2.15973 12.158 1.96799C11.7301 1.75 11.1701 1.75 10.05 1.75H9.94999C8.82988 1.75 8.26983 1.75 7.842 1.96799C7.46568 2.15973 7.15972 2.46569 6.96797 2.84202C6.74998 3.26984 6.74998 3.8299 6.74998 4.95V7.25M6.19579 18.25H13.8042C15.0014 18.25 15.6 18.25 16.0436 18.0114C16.4334 17.8018 16.7427 17.4688 16.923 17.0646C17.1281 16.6046 17.0839 16.0076 16.9954 14.8136L16.4695 7.71361C16.3921 6.66903 16.3534 6.14675 16.1253 5.75104C15.9244 5.40263 15.6232 5.12288 15.2609 4.94829C14.8494 4.75 14.3257 4.75 13.2783 4.75H6.72171C5.67428 4.75 5.15056 4.75 4.73908 4.94829C4.37679 5.12288 4.07554 5.40263 3.87466 5.75104C3.64652 6.14675 3.60783 6.66903 3.53046 7.71361L3.00453 14.8136C2.91609 16.0076 2.87187 16.6046 3.07701 17.0646C3.25728 17.4688 3.56653 17.8018 3.95633 18.0114C4.39993 18.25 4.99855 18.25 6.19579 18.25Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </a>
             </div>
             <!-- topbar end -->
             <div class="content-body">
                 <div style="width: 100%;height: 60vh;overflow: hidden;display: flex;justify-content: center;">
                     <div id="draggable-wrapper" style="width: 90%;margin: auto;position: relative;margin-bottom: 100%;">
-                        <img id="imageId" src="./a1.webp" style="position: absolute;width: 100%;height: auto;box-shadow: 2px 2px 10px #d9d9d9, -2px -2px 10px #d9d9d9;" alt="">
-                        <div id="childDiv" style="background: transparent;z-index: 11;position: absolute;top: 4%;">
+                        <img id="imageId" src="./images/a1.webp" style="position: absolute;width: 100%;height: auto;box-shadow: 2px 2px 10px #d9d9d9, -2px -2px 10px #d9d9d9;" alt="">
+                        <div id="childDiv" style="background: transparent;z-index: 11;position: absolute;top: 4%;border: 2px solid #8F44FE;">
 
-                            <input id="childInput" type="text" style="width: 100%;height: 100%;position: relative;border: 2px solid #8F44FE;outline: none;background: transparent;z-index: 99999;font-size: inherit;">
-                            <div id="topLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
-                            <div id="bottomLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
-                            <div id="topRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
-                            <div id="bottomRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:99999"></div>
+                            <input id="childInput" type="text" style="width: 100%;height: 100%;position: relative;border: none;outline: none;background: transparent;z-index: 99999;font-size: inherit;">
+                            <div id="topLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:5;pointer-events: none;"></div>
+                            <div id="bottomLeftPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:5;pointer-events: none;"></div>
+                            <div id="topRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:5;pointer-events: none;"></div>
+                            <div id="bottomRightPointer" style="max-width: .8rem;max-height: .8rem;border-radius: 50%;background: #fff;box-shadow: 1px 1px 3px gray;position: absolute;z-index:5;pointer-events: none;"></div>
                             <div id="bottomDragger" style="cursor: move;font-size: .5rem;max-width: 1.5rem;max-height: 1.2rem;border-radius: .5rem;background: #fff;position: absolute;left: 50%;transform: translate(-50%);bottom: -50%;box-shadow: 1px 1px 3px gray;display: flex;">
                                 <svg xmlns="http://www.w3.org/2000/svg" style="margin: auto;fill:#4e4e4e" id="arrow-circle-down" viewBox="0 0 24 24" width="12" height="12">
                                     <path d="M23.351,10.253c-.233-.263-.462-.513-.619-.67L20.487,7.3a1,1,0,0,0-1.426,1.4l2.251,2.29L21.32,11H13V2.745l2.233,2.194a1,1,0,0,0,1.4-1.426l-2.279-2.24c-.163-.163-.413-.391-.674-.623A2.575,2.575,0,0,0,12.028.006.28.28,0,0,0,12,0l-.011,0a2.584,2.584,0,0,0-1.736.647c-.263.233-.513.462-.67.619L7.3,3.513A1,1,0,1,0,8.7,4.939l2.29-2.251L11,2.68V11H2.68l.015-.015L4.939,8.7A1,1,0,1,0,3.513,7.3L1.274,9.577c-.163.163-.392.413-.624.675A2.581,2.581,0,0,0,0,11.989L0,12c0,.01.005.019.006.029A2.573,2.573,0,0,0,.65,13.682c.233.262.461.512.618.67l2.245,2.284a1,1,0,0,0,1.426-1.4L2.744,13H11v8.32l-.015-.014L8.7,19.062a1,1,0,1,0-1.4,1.425l2.278,2.239c.163.163.413.391.675.624a2.587,2.587,0,0,0,3.43,0c.262-.233.511-.46.669-.619l2.284-2.244a1,1,0,1,0-1.4-1.425L13,21.256V13h8.256l-2.2,2.233a1,1,0,1,0,1.426,1.4l2.239-2.279c.163-.163.391-.413.624-.675A2.589,2.589,0,0,0,23.351,10.253Z" />
@@ -343,18 +342,14 @@
                                         <path d="M9.16937 15.5794C8.97937 15.5794 8.78938 15.5094 8.63938 15.3594C8.34938 15.0694 8.34938 14.5894 8.63938 14.2994L14.2994 8.63938C14.5894 8.34938 15.0694 8.34938 15.3594 8.63938C15.6494 8.92937 15.6494 9.40937 15.3594 9.69937L9.69937 15.3594C9.55937 15.5094 9.35937 15.5794 9.16937 15.5794Z" />
                                         <path d="M14.8294 15.5794C14.6394 15.5794 14.4494 15.5094 14.2994 15.3594L8.63938 9.69937C8.34938 9.40937 8.34938 8.92937 8.63938 8.63938C8.92937 8.34938 9.40937 8.34938 9.69937 8.63938L15.3594 14.2994C15.6494 14.5894 15.6494 15.0694 15.3594 15.3594C15.2094 15.5094 15.0194 15.5794 14.8294 15.5794Z" />
                                     </svg>
-
                                 </button>
-
-
                             </div>
-
                         </div>
                     </nav>
                     <hr>
                     <div style="display: flex;flex-direction: row;justify-content:end;">
-                        <button style="border: none;width: 60%;height: 3rem;border-radius: 1.5rem;background: #307EF3;color: #fff;font-size: 1.1rem;"> 
-                           Set up Pricing
+                        <button style="border: none;width: 60%;height: 3rem;border-radius: 1.5rem;background: #307EF3;color: #fff;font-size: 1.1rem;">
+                            Set up Pricing
                         </button>
                     </div>
                 </div>
@@ -378,12 +373,16 @@
     <script src="./app-assets/js/core/app-menu.js"></script>
     <script src="./app-assets/js/core/app.js"></script>
     <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="./app-assets/js/scripts/pages/auth-login.js"></script>
-    <!-- END: Page JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="svg.min.js"></script>
+    <script src="./js/svg.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./js/jquery.ui.touch-punch.js"></script>
+    <script src="./js/editor.js"></script>
+    <script src="./js/editorTabs"></script>
+    <script src="./js/baloon.js"></script>
+    <script src="./js/button-expand.js"></script>
     <script>
         $(window).on('load', function() {
             if (feather) {
@@ -394,401 +393,7 @@
             }
         })
     </script>
-    <script>
-        document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', e => {
-                button.classList.toggle('added');
-            });
-        });
-    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="./jquery.ui.touch-punch.js"></script>
-    <script>
-        $(document).ready(function() {
-            var col = 255;
-            document.querySelector('#draggable-wrapper').addEventListener('wheel', function(e) {
-                if (e.wheelDelta > 0) {
-                    $('#draggable-wrapper').css('width', parseFloat($('#draggable-wrapper').css('width')) * 1.02 + 'px')
-                } else {
-                    $('#draggable-wrapper').css('width', parseFloat($('#draggable-wrapper').css('width')) * 0.98 + 'px')
-                }
-            })
-            let initialDistance;
-            $("#draggable-wrapper").on("touchstart", function(e) {
-                // alert('touchstart')
-                if (e.originalEvent.touches.length >= 2) {
-                    let x1 = e.originalEvent.touches[0].clientX;
-                    let y1 = e.originalEvent.touches[0].clientY;
-                    let x2 = e.originalEvent.touches[1].clientX;
-                    let y2 = e.originalEvent.touches[1].clientY;
-                    initialDistance = distanceBetween(x1, y1, x2, y2);
-                }
-            });
-            $("#draggable-wrapper").on("touchmove", function(e) {
-                // alert('touchmove')
-                if (e.originalEvent.touches.length >= 2) {
-                    let x1 = e.originalEvent.touches[0].clientX;
-                    let y1 = e.originalEvent.touches[0].clientY;
-                    let x2 = e.originalEvent.touches[1].clientX;
-                    let y2 = e.originalEvent.touches[1].clientY;
-                    let currentDistance = distanceBetween(x1, y1, x2, y2);
-                    if (currentDistance > initialDistance) {
-                        // fingers moving further apart
-                        $('#draggable-wrapper').css('width', parseFloat($('#draggable-wrapper').css('width')) * 1.08 + 'px')
-                    } else if (currentDistance < initialDistance) {
-                        // fingers moving closer together
-                        $('#draggable-wrapper').css('width', parseFloat($('#draggable-wrapper').css('width')) * 0.92 + 'px')
-                    }
-                    initialDistance = currentDistance;
-                }
-            });
-
-            function distanceBetween(x1, y1, x2, y2) {
-                return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-            }
-
-        });
-
-        let heightPercent = 15
-        let widthPercent = 60
-        let fontSizePercent = 8
-        let topPercent = 10
-        let leftPercent = 10
-
-        function updateDimentions() {
-            let currentHeight = $('#imageId').height();
-            let currentWidth = $('#draggable-wrapper').width();
-
-            $("#childDiv").height((currentHeight * heightPercent) / 100);
-            $("#childDiv").width((currentWidth * widthPercent) / 100);
-            $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
-            $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
-            $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
-
-            $('#topLeftPointer').width($('#childDiv').width() * .1 + 'px')
-            $('#bottomLeftPointer').width($('#childDiv').width() * .1 + 'px')
-            $('#topRightPointer').width($('#childDiv').width() * .1 + 'px')
-            $('#bottomRightPointer').width($('#childDiv').width() * .1 + 'px')
-            $('#bottomDragger').width($('#childDiv').width() * .1 + 'px')
-
-            $('#topLeftPointer').height($('#childDiv').width() * .1 + 'px')
-            $('#bottomLeftPointer').height($('#childDiv').width() * .1 + 'px')
-            $('#topRightPointer').height($('#childDiv').width() * .1 + 'px')
-            $('#bottomRightPointer').height($('#childDiv').width() * .1 + 'px')
-            $('#bottomDragger').height($('#childDiv').width() * .1 + 'px')
-
-            $('#topLeftPointer').css('left', -1 * $('#topLeftPointer').width() * .5 + 'px')
-            $('#bottomLeftPointer').css('left', -1 * $('#bottomLeftPointer').width() * .5 + 'px')
-            $('#topRightPointer').css('right', -1 * $('#topRightPointer').width() * .5 + 'px')
-            $('#bottomRightPointer').css('right', -1 * $('#bottomRightPointer').width() * .5 + 'px')
-
-            $('#topLeftPointer').css('top', -1 * $('#topLeftPointer').width() * .5 + 'px')
-            $('#bottomLeftPointer').css('bottom', -1 * $('#bottomLeftPointer').width() * .5 + 'px')
-            $('#topRightPointer').css('top', -1 * $('#topRightPointer').width() * .5 + 'px')
-            $('#bottomRightPointer').css('bottom', -1 * $('#bottomRightPointer').width() * .5 + 'px')
-            $('#bottomDragger').css('bottom', -1 * $('#childDiv').width() * .1 + 'px')
-
-        }
-        updateDimentions()
-        var element = document.getElementById("draggable-wrapper");
-        let previousWidth;
-        let previousHeight;
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                const currentWidth = mutation.target.getBoundingClientRect().width;
-                const currentHeight = mutation.target.getBoundingClientRect().height;
-                if ((previousWidth && currentWidth !== previousWidth) || (previousHeight && currentHeight !== previousHeight)) {
-                    console.log('width or height changed');
-                }
-                previousWidth = currentWidth;
-                previousHeight = currentHeight;
-            });
-            updateDimentions()
-            // let currentHeight = $('#imageId').height();
-            // let currentWidth = $('#draggable-wrapper').width();
-            // $("#childDiv").height((currentHeight * heightPercent) / 100);
-            // $("#childDiv").width((currentWidth * widthPercent) / 100);
-            // $("#childDiv").css("top", (currentHeight * topPercent) / 100 + "px");
-            // $("#childDiv").css("left", (currentWidth * leftPercent) / 100 + "px");
-            // $("#childDiv").css("font-size", (currentWidth * fontSizePercent) / 100 + "px");
-        });
-        observer.observe(element, {
-            attributes: true,
-            childList: false,
-            subtree: false
-        });
-
-        function updateWHTL() {
-            widthPercent = ($('#childDiv').width() * 100) / $('#imageId').width();
-            heightPercent = ($('#childDiv').height() * 100) / $('#imageId').height();
-            leftPercent = (parseFloat($('#childDiv').css('left')) * 100) / $('#imageId').width();
-            topPercent = (parseFloat($('#childDiv').css('top')) * 100) / $('#imageId').height();
-        }
-        $("#draggable-wrapper").draggable();
-        $('#childDiv').draggable({
-            containment: $("#imageId"),
-            drag: function(e, ui) {
-                updateWHTL()
-            },
-            stop: function(e, ui) {
-                updateWHTL()
-            }
-        }).resizable({
-            containment: $("#imageId"),
-            handles: "n, e, s, w, ne, nw, se, sw",
-            resize: function(e, ui) {
-                updateWHTL()
-            },
-            stop: function(e, ui) {
-                updateWHTL()
-            }
-        })
-        $('.ui-icon').remove()
-    </script>
-    <script>
-        // resources in description
-        const mainTabs = document.querySelector(".main-tabs");
-        const mainSliderCircle = document.querySelector(".main-slider-circle");
-        const roundButtons = document.querySelectorAll(".round-button");
-
-        const colors = {
-            gray: {
-                50: {
-                    value: "#b9b9bc5e"
-                },
-                100: {
-                    value: "#b9b9bc5e"
-                }
-            }
-        };
-
-        const getColor = (color, variant) => {
-            return colors[color][variant].value;
-        };
-
-        const handleActiveTab = (tabs, event, className) => {
-            tabs.forEach((tab) => {
-                tab.classList.remove(className);
-            });
-
-            if (!event.target.classList.contains(className)) {
-                event.target.classList.add(className);
-            }
-        };
-
-        mainTabs.addEventListener("click", (event) => {
-            const root = document.documentElement;
-            const targetColor = event.target.dataset.color;
-            const targetTranslateValue = event.target.dataset.translateValue;
-
-            if (event.target.classList.contains("round-button")) {
-                mainSliderCircle.classList.remove("animate-jello");
-                void mainSliderCircle.offsetWidth;
-                mainSliderCircle.classList.add("animate-jello");
-
-                root.style.setProperty("--translate-main-slider", targetTranslateValue);
-                root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
-                root.style.setProperty("--background-color", getColor(targetColor, 100));
-
-                handleActiveTab(roundButtons, event, "active");
-
-                if (!event.target.classList.contains("gallery")) {
-                    root.style.setProperty("--filters-container-height", "0");
-                    root.style.setProperty("--filters-wrapper-opacity", "0");
-                } else {
-                    root.style.setProperty("--filters-container-height", "3.5rem");
-                    root.style.setProperty("--filters-wrapper-opacity", "1");
-                }
-                if (!event.target.classList.contains("fontSize")) {
-                    root.style.setProperty("--filters-fsize-container-height", "0");
-                    root.style.setProperty("--filters-fsize-display", "none");
-                } else {
-                    root.style.setProperty("--filters-fsize-container-height", "3.5rem");
-                    root.style.setProperty("--filters-fsize-display", "flex");
-                }
-                if (!event.target.classList.contains("font")) {
-                    root.style.setProperty("--filters-font-container-height", "0");
-                    root.style.setProperty("--filters-font-wrapper-opacity", "0");
-                    $('#close-button-fontsearch').click()
-                    $('#close-button').click()
-                } else {
-                    root.style.setProperty("--filters-font-container-height", "3.5rem");
-                    root.style.setProperty("--filters-font-wrapper-opacity", "1");
-                }
-                //     root.style.setProperty("--filters-font-container-height", "0");
-                //     root.style.setProperty("--filters-font-display", "none");
-                //     root.style.setProperty("--filters-font-wrapper-opacity", "1");
-                // } else {
-                //     root.style.setProperty("--filters-font-container-height", "3.5rem");
-                //     root.style.setProperty("--filters-font-display", "flex");
-                //     root.style.setProperty("--filters-font-wrapper-opacity", "0");
-                // }
-            }
-        });
-
-        let filterTabs = document.querySelector(".filter-tabs");
-        let filterButtons = document.querySelectorAll(".filter-button");
-        let filterFontTabs = document.querySelector(".filter-font-tabs");
-        let filterFontButtons = document.querySelectorAll(".filter-font-button");
-
-
-        filterTabs.addEventListener("click", (event) => {
-            let root = document.documentElement;
-            let targetTranslateValue = event.target.dataset.translateValue;
-
-            if (event.target.classList.contains("filter-button")) {
-                root.style.setProperty("--translate-filters-slider", targetTranslateValue);
-                handleActiveTab(filterButtons, event, "filter-active");
-            }
-        });
-
-        filterFontTabs.addEventListener("click", (event) => {
-            let root = document.documentElement;
-            let targetTranslateValue = event.target.dataset.translateValue;
-
-            if (event.target.classList.contains("filter-font-button")) {
-                root.style.setProperty("--translate-filters-font-slider", targetTranslateValue);
-                handleActiveTab(filterFontButtons, event, "filter-font-active");
-            }
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script>
-        let slider = document.getElementById('slider'),
-            balloon,
-            balloonTransform,
-            balloonReset;
-
-        noUiSlider.create(slider, {
-            start: 60,
-            connect: 'lower',
-            range: {
-                min: 0,
-                max: 100
-            }
-        });
-
-        if (!balloon) {
-
-            let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-            svg.setAttribute('viewBox', '0 0 8 6');
-            let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            path.setAttribute('d', 'M3.19770784,0.400189793 L0.183732919,4.48916968 C-0.132777702,4.91857125 -0.0301446804,5.51531196 0.41297019,5.82202737 C0.58019429,5.93777661 0.780561067,6 0.986063367,6 L7.01401322,6 C7.55855868,6 8,5.57222019 8,5.04452705 C8,4.84538453 7.93578945,4.65121861 7.81634366,4.48916968 L4.80236874,0.400189793 C4.48585812,-0.0292117777 3.87005999,-0.128668564 3.42694512,0.178046844 C3.33840792,0.239330552 3.2609487,0.314392601 3.19770784,0.400189793 Z');
-            svg.appendChild(path);
-
-            let inner = document.createElement('div');
-
-            inner.appendChild(svg);
-
-            balloon = document.createElement('div');
-            balloon.classList.add('balloon');
-            balloon.appendChild(inner);
-
-            slider.getElementsByClassName('noUi-base')[0].appendChild(balloon);
-
-            balloonTransform = new Proxy({
-                r: 0
-            }, {
-                set(target, key, value) {
-                    target[key] = value;
-                    balloon.style.setProperty('--r', target.r + 'deg');
-                    return true;
-                },
-                get(target, key) {
-                    return target[key];
-                }
-            });
-
-        }
-
-        var timestamp = null,
-            lastX = null,
-            startedMoving = false,
-            moved = false;
-
-        slider.noUiSlider.on('start', function() {
-            let percent = this.get() / this.options.range.max * 100;
-            balloon.classList.add('active');
-            balloon.childNodes[0].dataset.value = Math.round(this.get());
-            TweenMax.to(balloon, 0, {
-                x: this.target.offsetWidth * percent / 100,
-                scale: .75 + .25 * percent / 100
-            });
-            balloonReset = setInterval(() => {
-                if (!moved && startedMoving) {
-                    TweenMax.to(slider.getElementsByClassName('noUi-handle')[0], .3, {
-                        css: {
-                            scale: 1
-                        }
-                    });
-                    balloonTransform.r = 0;
-                    startedMoving = false;
-                }
-                moved = false;
-            }, 20);
-        });
-
-        slider.noUiSlider.on('slide', function() {
-            let percent = this.get() / this.options.range.max * 100;
-            balloon.childNodes[0].dataset.value = Math.round(this.get());
-            if (timestamp === null) {
-                timestamp = Date.now();
-                lastX = this.get();
-                return;
-            }
-            var now = Date.now(),
-                speedX = Math.round((this.get() - lastX) / (now - timestamp) * 160),
-                speedX = speedX > 10 ? 10 : speedX < -10 ? -10 : speedX;
-
-            balloonTransform.r = speedX * -2;
-
-            startedMoving = true;
-            moved = true;
-
-            TweenMax.to(balloon, 1.4, {
-                x: this.target.offsetWidth * percent / 100,
-                scale: .75 + .25 * percent / 100,
-                ease: Elastic.easeOut.config(1, .6)
-            });
-
-            TweenMax.to(slider.getElementsByClassName('noUi-handle')[0], .3, {
-                css: {
-                    scale: .9
-                }
-            });
-
-            timestamp = now;
-            lastX = this.get();
-        });
-
-        slider.noUiSlider.on('end', function() {
-            balloon.classList.remove('active');
-            clearInterval(balloonReset);
-        });
-    </script>
-    <script>
-        $("#expand-button").click(function() {
-            $("#square").css("width", "12rem");
-            $("#square").css("height", "12rem");
-            $('#close-button-fontsearch').click()
-        });
-        $('#close-button').click(function() {
-            $("#square").css("width", "0rem");
-            $("#square").css("height", "0rem");
-        });
-        $("#expand-button-fontsearch").click(function() {
-            $("#square-search").css("width", "15rem");
-            $("#square-search").css("height", "18rem");
-            $('#close-button').click()
-        });
-        $('#close-button-fontsearch').click(function() {
-            $("#square-search").css("width", "0rem");
-            $("#square-search").css("height", "0rem");
-        });
-    </script>
 </body>
 <!-- END: Body-->
 
