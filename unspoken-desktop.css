@@ -21,7 +21,7 @@
     top: 1rem;
     overflow: auto;
     min-height: 25rem;
-    background: #EEF2F5;
+    background: #E0D9D2;
     margin: auto;
     border-radius: 1rem;
     display: flex;
@@ -65,7 +65,7 @@
     width: 100%;
     height: 15%;
     min-height: 7rem;
-    background: #EEF2F5;
+    background: #E0D9D2;
     margin: auto;
     border-radius: 1rem;
 }
@@ -243,8 +243,7 @@
     display: flex;
     transition: all .5s ease-in-out;
     margin: 0 .5rem;
-    border: 1px solid #EEF2F5;
-    background: linear-gradient(224deg,transparent,#EEF2F5);
+    background: linear-gradient(224deg, transparent, #E0D9D2 80%);
     backdrop-filter: blur(7px);
 }
 
@@ -258,12 +257,13 @@
     width: 10rem;
     padding: .5rem;
     height: 3rem;
-    border-radius: 1.25rem;
+    border-radius: .75rem;
     display: flex;
     flex-direction: row;
-    background: #EEF2F5;
-    border: 1px solid #EEF2F5;
+    justify-content: space-evenly;
     margin-right: 1rem;
+    background: #FF0000;
+    box-shadow: 0 6px 29px 7px rgba(255, 0, 0, .25);
 }
 
 .create-listing-icon {
@@ -280,7 +280,8 @@
 
 .create-listing-text {
     margin: auto;
-    width: 5rem;
+    margin-left: 0.6rem;
+    width: fit-content;
     height: 100%;
     text-align: center;
     vertical-align: middle;
@@ -291,7 +292,8 @@
     font-size: 1.1rem;
     height: fit-content;
     margin: auto;
-    color: #a9a9a9 !important;
+    color: #FFF !important;
+    font-weight: 600;
 }
 
 
@@ -306,6 +308,7 @@
     background: orangered;
     border-radius: 50%;
 }
+
 .mail-notification::before {
     content: "";
     position: absolute;
@@ -385,13 +388,14 @@
         -12px 1px 4px orange;
 }
 
-.content-box-wrapper{
+.content-box-wrapper {
     width: 100%;
     height: fit-content;
     min-height: 20vh;
     padding: 1rem 0;
 }
-.content-box-body{
+
+.content-box-body {
     width: 100%;
     height: fit-content;
     min-height: 10rem;
